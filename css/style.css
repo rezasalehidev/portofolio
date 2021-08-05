@@ -216,7 +216,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 
-.header-image {
+/* .header-image {
 	width: 35%;
 	animation: image-float 400s infinite;
   }
@@ -242,7 +242,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	  transform: translateZ(40rem);
 	  opacity: 1;
 	}
-  }
+  } */
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
