@@ -1,0 +1,163 @@
+{
+    "Header": {
+        "title": "مشخصات"
+    },
+    "About": {
+        "paragraph": "Self-taught web and mobile programmer with almost five years of professional experience in more than ten projects. Strong skills in teamwork, communication, creativity, and meeting timelines. Passionate about learning and seeking new opportunities in the field",
+        "Why": [
+            "2+ years React, freelancer and team worker",
+            "2+ years Nextjs Developer, Working with ssg/isr, next/image, ...",
+            "1+ years React native Developer",
+            "Master in creating mobile-first and responsive websites",
+            "Master in creating fully customized html/css component",
+            "Master in ui library like material ui and emotion",
+            "Experience working with RestFull and Graphql"
+        ]
+    },
+    "Services": [
+        {
+            "name": "React",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "Next.js",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "React Native",
+            "text": "85%",
+            "percent": "85"
+        },
+        {
+            "name": "Javascript",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "Typescript",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "PWA",
+            "text": "80%",
+            "percent": "80"
+        },
+        {
+            "name": "FlexBox / CssGrid",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "Bootstrap / Tailwindcss",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "Material ui / Ant",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "RestFull / Graphql",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "ReactQuery / RTK-query",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "Nodejs",
+            "text": "70%",
+            "percent": "70"
+        }
+    ],
+    "Testimonials": [
+        {
+            "img": "img/testimonials/01.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/02.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        },
+        {
+            "img": "img/testimonials/03.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/04.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        },
+        {
+            "img": "img/testimonials/05.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/06.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        }
+    ],
+    "Team": [
+        {
+            "img": "img/team/01.jpg",
+            "name": "John Doe",
+            "job": "Director"
+        },
+        {
+            "img": "img/team/02.jpg",
+            "name": "Mike Doe",
+            "job": "Senior Designer"
+        },
+        {
+            "img": "img/team/03.jpg",
+            "name": "Jane Doe",
+            "job": "Senior Designer"
+        },
+        {
+            "img": "img/team/04.jpg",
+            "name": "Karen Doe",
+            "job": "Project Manager"
+        }
+    ],
+    "Contact": {
+        "address": "Iran Karaj",
+        "phone": "09303174128",
+        "email": "rezasalehidev@gmail.com",
+        "Github": "https://github.com/rezasalehidev",
+        "twitter": "https://twitter.com/reza08189228",
+        "linkedin": "https://www.linkedin.com/in/reza-salehi-28b040228/"
+    },
+    "Features": [
+        {
+            "icon": "fa fa-comments-o",
+            "title": "Lorem ipsum",
+            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        },
+        {
+            "icon": "fa fa-bullhorn",
+            "title": "Lorem ipsum",
+            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        },
+        {
+            "icon": "fa fa-group",
+            "title": "Lorem ipsum",
+            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        },
+        {
+            "icon": "fa fa-magic",
+            "title": "Lorem ipsum",
+            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        }
+    ]
+}
