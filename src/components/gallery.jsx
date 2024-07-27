@@ -73,27 +73,26 @@ export const Gallery = (props) => {
                         </div>
                         <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up" data-aos="fade-up-left">
                             <div class="ih-item square effect13 left_to_right">
-                                <a href="express-state.com" title="Connect4Healing" data-lightbox-gallery="gallery1">
+                                <a href="https://play.google.com/store/apps/details?id=io.apsy.socialmodel" title="socialmodel" data-lightbox-gallery="gallery1">
                                     <div class="img">
                                         {" "}
                                         <img src="img/portfolio/04-large.jpg" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
-                                        <h3>Express State</h3>
-                                        <p>buy and sell home</p>
+                                        <h3>Social</h3>
                                     </div>
                                 </a>{" "}
                             </div>
                         </div>
                         <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up" data-aos="fade-up-left">
                             <div class="ih-item square effect13 left_to_right">
-                                <a href="https://rezasalehidev.github.io/animateReact/" title="Sample website" data-lightbox-gallery="gallery1">
+                                <a href="https://play.google.com/store/apps/details?id=com.asociar.ecomm" title="asociar" data-lightbox-gallery="gallery1">
                                     <div class="img">
                                         {" "}
                                         <img src="img/portfolio/09-large.jpg" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
-                                        <h3>Sample website</h3>
+                                        <h3>Apsy E-comm</h3>
                                     </div>
                                 </a>{" "}
                             </div>
