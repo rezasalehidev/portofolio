@@ -10,7 +10,7 @@ export const Gallery = (props) => {
         <div id="portfolio" className="text-center">
             <div className="container">
                 <div className="section-title">
-                    <h2>Sample Projects</h2>
+                    <h2>Projects</h2>
                     <p style={{ fontWeight: "bold" }}>Please turn on your VPN before viewing the sample projects</p>
                 </div>
                 <div className="row">
@@ -27,7 +27,7 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
-                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                            <h3 className="absolute" style={{ fontSize: 30, width: "60%", display: "flex", justifyContent: "center" }}>
                                 Chime Beauty
                             </h3>
                         </div>
@@ -44,31 +44,31 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
-                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                            <h3 className="absolute" style={{ fontSize: 30, width: "60%", display: "flex", justifyContent: "center" }}>
                                 Infuuse
-                            </h3>
-                        </div>
-                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up relative" data-aos="fade-up-left">
-                            <div class="ih-item circle colored effect1">
-                                <a href="https://vip.myknitnet.com/login" title="Genus hotels" data-lightbox-gallery="gallery1">
-                                    <div class="img">
-                                        {" "}
-                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
-                                    </div>
-                                    <div class="info">
-                                        <h3>myknitnet</h3>
-                                        <p>Monitoring solution</p>
-                                    </div>
-                                </a>{" "}
-                            </div>
-                            <h3 className="absolute" style={{ fontSize: 30 }}>
-                                myknitnet
                             </h3>
                         </div>
                         <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative" data-aos="fade-up-left">
                             {" "}
                             <div class="ih-item circle colored effect1">
-                                <a href="https://play.google.com/store/apps/details?id=io.apsy.chimebeauty&hl=de_CH&gl=US" title="Express state" data-lightbox-gallery="gallery1">
+                                <a href="https://vip.myknitnet.com/login" title="myKnitnet" data-lightbox-gallery="gallery1">
+                                    <div class="img">
+                                        {" "}
+                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
+                                    </div>
+                                    <div class="info">
+                                        <h3>myKnitnet</h3>
+                                        <p>Monitoring solution</p>
+                                    </div>
+                                </a>{" "}
+                            </div>
+                            <h3 className="absolute" style={{ fontSize: 30, width: "60%", display: "flex", justifyContent: "center" }}>
+                                myKnitnet
+                            </h3>
+                        </div>
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative" data-aos="fade-up-left">
+                            <div class="ih-item circle colored effect1">
+                                <a href="https://play.google.com/store/apps/details?id=io.apsy.chimebeauty&hl=de_CH&gl=US" title="Chime Beauty" data-lightbox-gallery="gallery1">
                                     <div class="img">
                                         {" "}
                                         <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
@@ -79,11 +79,11 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
-                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                            <h3 className="absolute" style={{ fontSize: 30, width: "60%", display: "flex", justifyContent: "center" }}>
                                 Chime Beauty App
                             </h3>
                         </div>
-                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up relative" data-aos="fade-up-left">
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative" data-aos="fade-up-left">
                             <div class="ih-item circle colored effect1">
                                 <a href="https://play.google.com/store/apps/details?id=io.apsy.socialmodel" title="socialmodel" data-lightbox-gallery="gallery1">
                                     <div class="img">
@@ -95,11 +95,11 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
-                            <h3 className="absolute" style={{ fontSize: 30 }}>
-                                Social
+                            <h3 className="absolute" style={{ fontSize: 30, width: "60%", display: "flex", justifyContent: "center" }}>
+                                Social App
                             </h3>
                         </div>
-                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up  relative" data-aos="fade-up-left">
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb  relative" data-aos="fade-up-left">
                             <div class="ih-item circle colored effect1">
                                 <a href="https://play.google.com/store/apps/details?id=com.asociar.ecomm" title="asociar" data-lightbox-gallery="gallery1">
                                     <div class="img">
@@ -111,7 +111,7 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
-                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                            <h3 className="absolute" style={{ fontSize: 30, width: "60%", display: "flex", justifyContent: "center" }}>
                                 Apsy E-comm
                             </h3>
                         </div>
@@ -127,7 +127,7 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
-                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                            <h3 className="absolute" style={{ fontSize: 30, width: "60%", display: "flex", justifyContent: "center" }}>
                                 Hudu
                             </h3>
                         </div>
@@ -143,7 +143,7 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
-                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                            <h3 className="absolute" style={{ fontSize: 30, width: "60%", display: "flex", justifyContent: "center" }}>
                                 Social Order
                             </h3>
                         </div>
@@ -159,7 +159,7 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
-                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                            <h3 className="absolute" style={{ fontSize: 30, width: "60%", display: "flex", justifyContent: "center" }}>
                                 Propagator
                             </h3>
                         </div>

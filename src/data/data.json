@@ -27,8 +27,8 @@
         },
         {
             "name": "React Native",
-            "text": "85%",
-            "percent": "85"
+            "text": "95%",
+            "percent": "95"
         },
         {
             "name": "Javascript",
@@ -41,7 +41,7 @@
             "percent": "90"
         },
         {
-            "name": "PWA",
+            "name": "Pwa",
             "text": "80%",
             "percent": "80"
         },
@@ -51,7 +51,7 @@
             "percent": "90"
         },
         {
-            "name": "Bootstrap / Tailwindcss",
+            "name": "Bootstrap / Tailwind css",
             "text": "90%",
             "percent": "90"
         },
@@ -61,7 +61,7 @@
             "percent": "90"
         },
         {
-            "name": "RestFull / Graphql",
+            "name": "RestFull / Graphql / grpc",
             "text": "90%",
             "percent": "90"
         },
@@ -72,8 +72,8 @@
         },
         {
             "name": "Nodejs",
-            "text": "70%",
-            "percent": "70"
+            "text": "80%",
+            "percent": "80"
         }
     ],
     "Testimonials": [
