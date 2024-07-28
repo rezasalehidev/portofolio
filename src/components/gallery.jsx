@@ -139,7 +139,7 @@ export const Gallery = (props) => {
                                         <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
-                                        <h3>Hudu</h3>
+                                        <h3>Social Order</h3>
                                     </div>
                                 </a>{" "}
                             </div>
@@ -155,7 +155,7 @@ export const Gallery = (props) => {
                                         <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
-                                        <h3>Hudu</h3>
+                                        <h3>Propagator</h3>
                                     </div>
                                 </a>{" "}
                             </div>
