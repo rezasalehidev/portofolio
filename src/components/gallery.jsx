@@ -15,11 +15,11 @@ export const Gallery = (props) => {
                 </div>
                 <div className="row">
                     <div className="portfolio-items">
-                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up" data-aos="fade-up-left">
-                            <div class="ih-item square effect13 left_to_right">
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative" data-aos="fade-up-left">
+                            <div class="ih-item circle colored effect1">
                                 <a href="http://chime-beauty.com/" title="Chime Beauty" data-lightbox-gallery="gallery1">
                                     <div class="img">
-                                        <img src="img/portfolio/06-large.jpg" className="img-responsive" alt="Project Title" />{" "}
+                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
                                         <h3>Chime Beauty</h3>
@@ -27,13 +27,16 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
+                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                                Chime Beauty
+                            </h3>
                         </div>
-                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up" data-aos="fade-up-left">
-                            <div class="ih-item square effect13 left_to_right">
-                                <a href="https://infuuse.ai/" title="Infuuse" data-lightbox-gallery="gallery1">
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative" data-aos="fade-up-left">
+                            <div class="ih-item circle colored effect1">
+                                <a href="https://app.infuuse.ai/" title="Infuuse" data-lightbox-gallery="gallery1">
                                     <div class="img">
                                         {" "}
-                                        <img src="img/portfolio/02-large.jpg" alt="Project Title" />{" "}
+                                        <img src="img/portfolio/SolidImage.png" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
                                         <h3>Infuuse</h3>
@@ -41,28 +44,34 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
+                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                                Infuuse
+                            </h3>
                         </div>
-                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb-3" data-aos="fade-up-left">
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative" data-aos="fade-up-left">
                             {" "}
-                            <div class="ih-item square effect13 left_to_right">
+                            <div class="ih-item circle colored effect1">
                                 <a href="https://play.google.com/store/apps/details?id=io.apsy.chimebeauty&hl=de_CH&gl=US" title="Express state" data-lightbox-gallery="gallery1">
                                     <div class="img">
                                         {" "}
-                                        <img src="img/portfolio/01-large.jpg" className="img-responsive" alt="Project Title" />{" "}
+                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
-                                        <h3>Chime Beauty Application</h3>
+                                        <h3>Chime Beauty</h3>
                                         <p>Selling cosmetic products</p>
                                     </div>
                                 </a>{" "}
                             </div>
+                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                                Chime Beauty App
+                            </h3>
                         </div>
-                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up" data-aos="fade-up-left">
-                            <div class="ih-item square effect13 left_to_right">
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up relative" data-aos="fade-up-left">
+                            <div class="ih-item circle colored effect1">
                                 <a href="https://vip.myknitnet.com/login" title="Genus hotels" data-lightbox-gallery="gallery1">
                                     <div class="img">
                                         {" "}
-                                        <img src="img/portfolio/03-large.jpg" className="img-responsive" alt="Project Title" />{" "}
+                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
                                         <h3>myknitnet</h3>
@@ -70,32 +79,41 @@ export const Gallery = (props) => {
                                     </div>
                                 </a>{" "}
                             </div>
+                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                                myknitnet
+                            </h3>
                         </div>
-                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up" data-aos="fade-up-left">
-                            <div class="ih-item square effect13 left_to_right">
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up relative" data-aos="fade-up-left">
+                            <div class="ih-item circle colored effect1">
                                 <a href="https://play.google.com/store/apps/details?id=io.apsy.socialmodel" title="socialmodel" data-lightbox-gallery="gallery1">
                                     <div class="img">
                                         {" "}
-                                        <img src="img/portfolio/04-large.jpg" className="img-responsive" alt="Project Title" />{" "}
+                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
                                         <h3>Social</h3>
                                     </div>
                                 </a>{" "}
                             </div>
+                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                                Social
+                            </h3>
                         </div>
-                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up" data-aos="fade-up-left">
-                            <div class="ih-item square effect13 left_to_right">
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up  relative" data-aos="fade-up-left">
+                            <div class="ih-item circle colored effect1">
                                 <a href="https://play.google.com/store/apps/details?id=com.asociar.ecomm" title="asociar" data-lightbox-gallery="gallery1">
                                     <div class="img">
                                         {" "}
-                                        <img src="img/portfolio/09-large.jpg" className="img-responsive" alt="Project Title" />{" "}
+                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
                                         <h3>Apsy E-comm</h3>
                                     </div>
                                 </a>{" "}
                             </div>
+                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                                Apsy E-comm
+                            </h3>
                         </div>
                     </div>
                 </div>

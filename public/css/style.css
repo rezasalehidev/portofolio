@@ -688,3 +688,12 @@ color: #777;
 	animation-play-state: running;
 }
 
+
+.absolute{
+	position: absolute;
+	left: 0;
+}
+
+.mb {
+	margin-bottom: 80;
+}
