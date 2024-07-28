@@ -48,6 +48,23 @@ export const Gallery = (props) => {
                                 Infuuse
                             </h3>
                         </div>
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up relative" data-aos="fade-up-left">
+                            <div class="ih-item circle colored effect1">
+                                <a href="https://vip.myknitnet.com/login" title="Genus hotels" data-lightbox-gallery="gallery1">
+                                    <div class="img">
+                                        {" "}
+                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
+                                    </div>
+                                    <div class="info">
+                                        <h3>myknitnet</h3>
+                                        <p>Monitoring solution</p>
+                                    </div>
+                                </a>{" "}
+                            </div>
+                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                                myknitnet
+                            </h3>
+                        </div>
                         <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative" data-aos="fade-up-left">
                             {" "}
                             <div class="ih-item circle colored effect1">
@@ -68,30 +85,13 @@ export const Gallery = (props) => {
                         </div>
                         <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up relative" data-aos="fade-up-left">
                             <div class="ih-item circle colored effect1">
-                                <a href="https://vip.myknitnet.com/login" title="Genus hotels" data-lightbox-gallery="gallery1">
-                                    <div class="img">
-                                        {" "}
-                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
-                                    </div>
-                                    <div class="info">
-                                        <h3>myknitnet</h3>
-                                        <p>Monitoring solution</p>
-                                    </div>
-                                </a>{" "}
-                            </div>
-                            <h3 className="absolute" style={{ fontSize: 30 }}>
-                                myknitnet
-                            </h3>
-                        </div>
-                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up relative" data-aos="fade-up-left">
-                            <div class="ih-item circle colored effect1">
                                 <a href="https://play.google.com/store/apps/details?id=io.apsy.socialmodel" title="socialmodel" data-lightbox-gallery="gallery1">
                                     <div class="img">
                                         {" "}
                                         <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
-                                        <h3>Social</h3>
+                                        <h3>Social App</h3>
                                     </div>
                                 </a>{" "}
                             </div>
@@ -107,12 +107,60 @@ export const Gallery = (props) => {
                                         <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
                                     </div>
                                     <div class="info">
-                                        <h3>Apsy E-comm</h3>
+                                        <h3>Apsy E-comm App</h3>
                                     </div>
                                 </a>{" "}
                             </div>
                             <h3 className="absolute" style={{ fontSize: 30 }}>
                                 Apsy E-comm
+                            </h3>
+                        </div>
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up  relative" data-aos="fade-up-left">
+                            <div class="ih-item circle colored effect1">
+                                <a href="https://heyhudu.com/" title="asociar" data-lightbox-gallery="gallery1">
+                                    <div class="img">
+                                        {" "}
+                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
+                                    </div>
+                                    <div class="info">
+                                        <h3>Hudu</h3>
+                                    </div>
+                                </a>{" "}
+                            </div>
+                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                                Hudu
+                            </h3>
+                        </div>
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up  relative" data-aos="fade-up-left">
+                            <div class="ih-item circle colored effect1">
+                                <a href="https://qa.socialorder.io/" title="asociar" data-lightbox-gallery="gallery1">
+                                    <div class="img">
+                                        {" "}
+                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
+                                    </div>
+                                    <div class="info">
+                                        <h3>Hudu</h3>
+                                    </div>
+                                </a>{" "}
+                            </div>
+                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                                Social Order
+                            </h3>
+                        </div>
+                        <div className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up  relative" data-aos="fade-up-left">
+                            <div class="ih-item circle colored effect1">
+                                <a href="https://qa.propagator.ca/" title="asociar" data-lightbox-gallery="gallery1">
+                                    <div class="img">
+                                        {" "}
+                                        <img src="img/portfolio/SolidImage.png" className="img-responsive" alt="Project Title" />{" "}
+                                    </div>
+                                    <div class="info">
+                                        <h3>Hudu</h3>
+                                    </div>
+                                </a>{" "}
+                            </div>
+                            <h3 className="absolute" style={{ fontSize: 30 }}>
+                                Propagator
                             </h3>
                         </div>
                     </div>
