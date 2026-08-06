@@ -38,10 +38,10 @@
 }
 
 
-.about-text h3{
-  text-align: right;
+.fontIR {
+  font-family: "Georgia", serif;
 }
 
-.fontIR{
-  font-family:'Georgia';
+.app {
+  overflow-x: hidden;
 }

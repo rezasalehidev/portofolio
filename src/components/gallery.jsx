@@ -1,342 +1,93 @@
-import AOS from "aos";
-import React, { useEffect } from "react";
-export const Gallery = (props) => {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  }, []);
+import React from "react";
+
+const projects = [
+  {
+    href: "http://chime-beauty.com/",
+    title: "Chime Beauty",
+    description: "Selling cosmetic products",
+  },
+  {
+    href: "https://staging.loopa.dev/",
+    title: "Loopa",
+    description: "AI-powered Problem Solver",
+  },
+  {
+    href: "https://vip.myknitnet.com/login",
+    title: "myKnitnet",
+    description: "Monitoring solution",
+  },
+  {
+    href: "https://play.google.com/store/apps/details?id=io.apsy.chimebeauty&hl=de_CH&gl=US",
+    title: "Chime Beauty App",
+    description: "Selling cosmetic products",
+  },
+  {
+    href: "https://play.google.com/store/apps/details?id=io.apsy.socialmodel",
+    title: "Social App",
+    description: "Social mobile app",
+  },
+  {
+    href: "https://play.google.com/store/apps/details?id=com.asociar.ecomm",
+    title: "Apsy E-comm",
+    description: "E-commerce app",
+  },
+  {
+    href: "https://heyhudu.com/",
+    title: "Hudu",
+    description: "Product platform",
+  },
+  {
+    href: "https://qa.socialorder.io/",
+    title: "Social Order",
+    description: "Ordering platform",
+  },
+  {
+    href: "https://www.tryboxy.com/en/",
+    title: "Boxy",
+    description: "Shipping platform",
+  },
+];
+
+export const Gallery = () => {
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Projects</h2>
-          <p style={{ fontWeight: "bold" }}>
+          <p className="portfolio-note">
             Please turn on your VPN before viewing the sample projects
           </p>
         </div>
-        <div className="row">
-          <div className="portfolio-items">
+        <div className="row portfolio-grid">
+          {projects.map((project) => (
             <div
-              className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative"
-              data-aos="fade-up-left"
+              key={project.title}
+              className="col-xs-12 col-sm-6 col-md-4 portfolio-card"
+              data-aos="fade-up"
             >
-              <div class="ih-item circle colored effect1">
+              <div className="ih-item circle colored effect1">
                 <a
-                  href="http://chime-beauty.com/"
-                  title="Chime Beauty"
-                  data-lightbox-gallery="gallery1"
+                  href={project.href}
+                  title={project.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <div class="img">
+                  <div className="img">
                     <img
                       src="img/portfolio/SolidImage.png"
                       className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
+                      alt={project.title}
+                    />
                   </div>
-                  <div class="info">
-                    <h3>Chime Beauty</h3>
-                    <p>Selling cosmetic products</p>
+                  <div className="info">
+                    <h3>{project.title}</h3>
+                    {project.description ? <p>{project.description}</p> : null}
                   </div>
-                </a>{" "}
+                </a>
               </div>
-              <h3
-                className="absolute"
-                style={{
-                  fontSize: 30,
-                  width: "60%",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                Chime Beauty
-              </h3>
+              <h3 className="project-title">{project.title}</h3>
             </div>
-            <div
-              className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative"
-              data-aos="fade-up-left"
-            >
-              <div class="ih-item circle colored effect1">
-                <a
-                  href="https://staging.loopa.dev/"
-                  title="Loopa"
-                  data-lightbox-gallery="gallery1"
-                >
-                  <div class="img">
-                    {" "}
-                    <img
-                      src="img/portfolio/SolidImage.png"
-                      alt="Project Title"
-                    />{" "}
-                  </div>
-                  <div class="info">
-                    <h3>Loopa</h3>
-                    <p>AI-powered Problem Solver</p>
-                  </div>
-                </a>{" "}
-              </div>
-              <h3
-                className="absolute"
-                style={{
-                  fontSize: 30,
-                  width: "60%",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                Loopa
-              </h3>
-            </div>
-            <div
-              className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative"
-              data-aos="fade-up-left"
-            >
-              {" "}
-              <div class="ih-item circle colored effect1">
-                <a
-                  href="https://vip.myknitnet.com/login"
-                  title="myKnitnet"
-                  data-lightbox-gallery="gallery1"
-                >
-                  <div class="img">
-                    {" "}
-                    <img
-                      src="img/portfolio/SolidImage.png"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </div>
-                  <div class="info">
-                    <h3>myKnitnet</h3>
-                    <p>Monitoring solution</p>
-                  </div>
-                </a>{" "}
-              </div>
-              <h3
-                className="absolute"
-                style={{
-                  fontSize: 30,
-                  width: "60%",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                myKnitnet
-              </h3>
-            </div>
-            <div
-              className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative"
-              data-aos="fade-up-left"
-            >
-              <div class="ih-item circle colored effect1">
-                <a
-                  href="https://play.google.com/store/apps/details?id=io.apsy.chimebeauty&hl=de_CH&gl=US"
-                  title="Chime Beauty"
-                  data-lightbox-gallery="gallery1"
-                >
-                  <div class="img">
-                    {" "}
-                    <img
-                      src="img/portfolio/SolidImage.png"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </div>
-                  <div class="info">
-                    <h3>Chime Beauty</h3>
-                    <p>Selling cosmetic products</p>
-                  </div>
-                </a>{" "}
-              </div>
-              <h3
-                className="absolute"
-                style={{
-                  fontSize: 30,
-                  width: "60%",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                Chime Beauty App
-              </h3>
-            </div>
-            <div
-              className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb relative"
-              data-aos="fade-up-left"
-            >
-              <div class="ih-item circle colored effect1">
-                <a
-                  href="https://play.google.com/store/apps/details?id=io.apsy.socialmodel"
-                  title="socialmodel"
-                  data-lightbox-gallery="gallery1"
-                >
-                  <div class="img">
-                    {" "}
-                    <img
-                      src="img/portfolio/SolidImage.png"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </div>
-                  <div class="info">
-                    <h3>Social App</h3>
-                  </div>
-                </a>{" "}
-              </div>
-              <h3
-                className="absolute"
-                style={{
-                  fontSize: 30,
-                  width: "60%",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                Social App
-              </h3>
-            </div>
-            <div
-              className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up mb  relative"
-              data-aos="fade-up-left"
-            >
-              <div class="ih-item circle colored effect1">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.asociar.ecomm"
-                  title="asociar"
-                  data-lightbox-gallery="gallery1"
-                >
-                  <div class="img">
-                    {" "}
-                    <img
-                      src="img/portfolio/SolidImage.png"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </div>
-                  <div class="info">
-                    <h3>Apsy E-comm App</h3>
-                  </div>
-                </a>{" "}
-              </div>
-              <h3
-                className="absolute"
-                style={{
-                  fontSize: 30,
-                  width: "60%",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                Apsy E-comm
-              </h3>
-            </div>
-            <div
-              className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up  relative"
-              data-aos="fade-up-left"
-            >
-              <div class="ih-item circle colored effect1">
-                <a
-                  href="https://heyhudu.com/"
-                  title="asociar"
-                  data-lightbox-gallery="gallery1"
-                >
-                  <div class="img">
-                    {" "}
-                    <img
-                      src="img/portfolio/SolidImage.png"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </div>
-                  <div class="info">
-                    <h3>Hudu</h3>
-                  </div>
-                </a>{" "}
-              </div>
-              <h3
-                className="absolute"
-                style={{
-                  fontSize: 30,
-                  width: "60%",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                Hudu
-              </h3>
-            </div>
-            <div
-              className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up  relative"
-              data-aos="fade-up-left"
-            >
-              <div class="ih-item circle colored effect1">
-                <a
-                  href="https://qa.socialorder.io/"
-                  title="asociar"
-                  data-lightbox-gallery="gallery1"
-                >
-                  <div class="img">
-                    {" "}
-                    <img
-                      src="img/portfolio/SolidImage.png"
-                      className="img-responsive"
-                      alt="Project Title"
-                    />{" "}
-                  </div>
-                  <div class="info">
-                    <h3>Social Order</h3>
-                  </div>
-                </a>{" "}
-              </div>
-              <h3
-                className="absolute"
-                style={{
-                  fontSize: 30,
-                  width: "60%",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                Social Order
-              </h3>
-            </div>
-            <div
-              className="col-sm-6 col-md-4 col-lg-4 col-xs-12 margin-up  relative"
-              data-aos="fade-up-left"
-            >
-              <div class="ih-item circle colored effect1">
-                <a
-                  href="https://www.tryboxy.com/en/"
-                  title="Boxy"
-                  data-lightbox-gallery="gallery1"
-                >
-                  <div class="img">
-                    {" "}
-                    <img
-                      src="img/portfolio/SolidImage.png"
-                      className="img-responsive"
-                      alt="Boxy - Shipping Platform"
-                    />{" "}
-                  </div>
-                  <div class="info">
-                    <h3>Boxy</h3>
-                    <p>Shipping platform</p>
-                  </div>
-                </a>{" "}
-              </div>
-              <h3
-                className="absolute"
-                style={{
-                  fontSize: 30,
-                  width: "60%",
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                Boxy
-              </h3>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

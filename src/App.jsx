@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import AOS from "aos";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
@@ -12,30 +13,42 @@ import ProgressBar from "react-progressbar-on-scroll";
 import { UseSize } from "./components/useSize";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1000,
-    speedAsDuration: true,
+  speed: 1000,
+  speedAsDuration: true,
 });
 
 const App = () => {
-    const [landingPageData, setLandingPageData] = useState({});
-    
-    useEffect(() => {
-        setLandingPageData(JsonData);
-    }, []);
+  const [landingPageData, setLandingPageData] = useState({});
+  const { mobile } = UseSize();
 
-    const { mobile } = UseSize();
+  useEffect(() => {
+    setLandingPageData(JsonData);
+    AOS.init({
+      duration: 800,
+      once: true,
+      disable: "mobile",
+      easing: "ease-out-cubic",
+    });
+  }, []);
 
-    return (
-        <div className="app">
-            {mobile === false && <ProgressBar color="#5ca9fb" gradient={true} height={4} gradientColor="#5ca9fb" />}
-            <Navigation />
-            <Header data={landingPageData.Header} />
-            <About data={landingPageData.About} />
-            <Services data={landingPageData.Services} />
-            <Gallery />
-            <Contact data={landingPageData.Contact} />
-        </div>
-    );
+  return (
+    <div className="app">
+      {!mobile && (
+        <ProgressBar
+          color="#5ca9fb"
+          gradient={true}
+          height={4}
+          gradientColor="#5ca9fb"
+        />
+      )}
+      <Navigation />
+      <Header data={landingPageData.Header} />
+      <About data={landingPageData.About} />
+      <Services data={landingPageData.Services} />
+      <Gallery />
+      <Contact data={landingPageData.Contact} />
+    </div>
+  );
 };
 
 export default App;
