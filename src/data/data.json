@@ -103,6 +103,12 @@
             "category": "frontend"
         },
         {
+            "name": "MicroFrontend",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
             "name": "Flutter",
             "text": "90%",
             "percent": "90",

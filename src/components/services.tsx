@@ -20,6 +20,7 @@ const FRONTEND_NAMES = new Set([
   "Tailwind css",
   "Material ui / Ant",
   "ReactQuery / RTK-query",
+  "MicroFrontend",
 ]);
 
 const MOBILE_NAMES = new Set(["React Native", "Flutter"]);
