@@ -6,6 +6,7 @@ export interface HeaderData {
 export interface AboutData {
   paragraph: string;
   Why: string[];
+  careerStartYear?: number;
 }
 
 export interface ServiceItem {

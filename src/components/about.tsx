@@ -5,7 +5,24 @@ interface AboutProps {
   data?: AboutData;
 }
 
+const DEFAULT_CAREER_START_YEAR = 2018;
+
+const getYearsOfExperience = (careerStartYear: number): number => {
+  const currentYear = new Date().getFullYear();
+  return Math.max(1, currentYear - careerStartYear);
+};
+
+const formatAboutParagraph = (paragraph: string, years: number): string =>
+  paragraph.replace(/\{\{\s*years\s*\}\}/g, String(years));
+
 export const About = ({ data }: AboutProps): JSX.Element => {
+  const years = getYearsOfExperience(
+    data?.careerStartYear ?? DEFAULT_CAREER_START_YEAR
+  );
+  const paragraph = data?.paragraph
+    ? formatAboutParagraph(data.paragraph, years)
+    : "loading...";
+
   return (
     <div id="about">
       <div className="container">
@@ -13,7 +30,7 @@ export const About = ({ data }: AboutProps): JSX.Element => {
           <div className="col-xs-12 col-md-6">
             <div className="about-text" data-aos="fade-up">
               <h2>About me</h2>
-              <p>{data?.paragraph ?? "loading..."}</p>
+              <p>{paragraph}</p>
               <h3>Professional experiences</h3>
               <ul className="about-list">
                 {data?.Why.map((item, i) => (
