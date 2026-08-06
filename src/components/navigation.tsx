@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 
-export const Navigation = () => {
+export const Navigation = (): JSX.Element => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (): void => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
       const menu = document.getElementById("menu");
-      if (!menu) return;
+      if (!menu) {
+        return;
+      }
 
       if (scrollTop > 30) {
         menu.classList.add("blur-active");
@@ -20,7 +22,7 @@ export const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const closeMenu = () => setMenuOpen(false);
+  const closeMenu = (): void => setMenuOpen(false);
 
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -38,7 +40,11 @@ export const Navigation = () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top" onClick={closeMenu}>
+          <a
+            className="navbar-brand page-scroll"
+            href="#page-top"
+            onClick={closeMenu}
+          >
             Reza Salehi
           </a>
         </div>

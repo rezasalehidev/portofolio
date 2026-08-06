@@ -11,18 +11,19 @@ import SmoothScroll from "smooth-scroll";
 import "animate.css";
 import ProgressBar from "react-progressbar-on-scroll";
 import { UseSize } from "./components/useSize";
+import type { LandingPageData } from "./types/portfolio";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
 });
 
-const App = () => {
-  const [landingPageData, setLandingPageData] = useState({});
+const App = (): JSX.Element => {
+  const [landingPageData, setLandingPageData] = useState<LandingPageData>({});
   const { mobile } = UseSize();
 
   useEffect(() => {
-    setLandingPageData(JsonData);
+    setLandingPageData(JsonData as LandingPageData);
     AOS.init({
       duration: 800,
       once: true,

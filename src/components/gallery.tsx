@@ -1,6 +1,7 @@
 import React from "react";
+import type { ProjectItem } from "../types/portfolio";
 
-const projects = [
+const projects: ProjectItem[] = [
   {
     href: "http://chime-beauty.com/",
     title: "Chime Beauty",
@@ -48,7 +49,7 @@ const projects = [
   },
 ];
 
-export const Gallery = () => {
+export const Gallery = (): JSX.Element => {
   return (
     <div id="portfolio" className="text-center">
       <div className="container">

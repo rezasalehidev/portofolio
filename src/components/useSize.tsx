@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 
-export function UseSize() {
+interface UseSizeResult {
+  mobile: boolean;
+}
+
+export function UseSize(): UseSizeResult {
   const [mobile, setMobile] = useState(
     typeof window !== "undefined" ? window.innerWidth <= 768 : false
   );
 
   useEffect(() => {
-    const handleWindowSizeChange = () => {
+    const handleWindowSizeChange = (): void => {
       setMobile(window.innerWidth <= 768);
     };
 

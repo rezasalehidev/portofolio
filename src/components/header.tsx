@@ -1,10 +1,19 @@
 import React, { useRef, useEffect } from "react";
 import { init } from "ityped";
+import type { HeaderData } from "../types/portfolio";
 
-export const Header = (props) => {
-  const textRef = useRef();
+interface HeaderProps {
+  data?: HeaderData;
+}
+
+export const Header = ({ data }: HeaderProps): JSX.Element => {
+  const textRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    if (!textRef.current) {
+      return;
+    }
+
     init(textRef.current, {
       startDelay: 650,
       typeSpeed: 220,
@@ -24,12 +33,9 @@ export const Header = (props) => {
                   <span className="typed-text" ref={textRef}></span>
                 </h2>
                 <p className="intro-paragraph">
-                  {props.data ? props.data.paragraph : "Loading"}
+                  {data?.paragraph ?? "Loading"}
                 </p>
-                <a
-                  href="#about"
-                  className="btn btn-custom btn-lg page-scroll"
-                >
+                <a href="#about" className="btn btn-custom btn-lg page-scroll">
                   About me
                 </a>
               </div>

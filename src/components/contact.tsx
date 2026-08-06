@@ -1,6 +1,11 @@
 import React from "react";
+import type { ContactData } from "../types/portfolio";
 
-export const Contact = (props) => {
+interface ContactProps {
+  data?: ContactData;
+}
+
+export const Contact = ({ data }: ContactProps): JSX.Element => {
   return (
     <div id="contact">
       <div className="container">
@@ -14,7 +19,7 @@ export const Contact = (props) => {
               <span>
                 <i className="fa fa-map-marker"></i> Address
               </span>
-              <p>{props.data ? props.data.address : "loading"}</p>
+              <p>{data?.address ?? "loading"}</p>
             </div>
           </div>
           <div className="col-xs-12 col-sm-6 contact-info" data-aos="fade-up">
@@ -23,8 +28,8 @@ export const Contact = (props) => {
                 <i className="fa fa-envelope-o"></i> Email
               </span>
               <p>
-                {props.data ? (
-                  <a href={`mailto:${props.data.email}`}>{props.data.email}</a>
+                {data?.email ? (
+                  <a href={`mailto:${data.email}`}>{data.email}</a>
                 ) : (
                   "loading"
                 )}
@@ -36,7 +41,7 @@ export const Contact = (props) => {
           <ul>
             <li>
               <a
-                href={props.data ? props.data.Github : "/"}
+                href={data?.Github ?? "/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -46,7 +51,7 @@ export const Contact = (props) => {
             </li>
             <li>
               <a
-                href={props.data ? props.data.twitter : "/"}
+                href={data?.twitter ?? "/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
@@ -56,7 +61,7 @@ export const Contact = (props) => {
             </li>
             <li>
               <a
-                href={props.data ? props.data.linkedin : "/"}
+                href={data?.linkedin ?? "/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"

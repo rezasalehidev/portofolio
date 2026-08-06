@@ -76,6 +76,36 @@
             "name": "Nodejs",
             "text": "80%",
             "percent": "80"
+        },
+        {
+            "name": "Vue 3",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "Angular",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "Nuxt",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "NestJS",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "Django",
+            "text": "90%",
+            "percent": "90"
+        },
+        {
+            "name": "Flask",
+            "text": "90%",
+            "percent": "90"
         }
     ],
     "Testimonials": [
