@@ -51,16 +51,6 @@ export const Contact = ({ data }: ContactProps): JSX.Element => {
             </li>
             <li>
               <a
-                href={data?.twitter ?? "/"}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-              >
-                <i className="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a
                 href={data?.linkedin ?? "/"}
                 target="_blank"
                 rel="noopener noreferrer"

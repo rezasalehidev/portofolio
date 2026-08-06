@@ -8,10 +8,7 @@
         "careerStartYear": 2018,
         "Why": [
             "2+ years React, freelancer and team worker",
-            "2+ years Nextjs Developer, Working with ssg/isr, next/image, ...",
-            "2+ years Vue Developer",
-            "2+ years Nuxt Developer",
-            "2+ years Angular Developer",
+            "2+ years Nextjs, Vue, Nuxt, Angular Developer, Working with ssg/isr, next/image, ...",
             "2+ years React native Developer",
             "1+ years Flutter Developer",
             "Master in creating mobile-first and responsive websites",
@@ -140,6 +137,30 @@
             "text": "90%",
             "percent": "90",
             "category": "backend"
+        },
+        {
+            "name": "PostgreSQL",
+            "text": "90%",
+            "percent": "90",
+            "category": "backend"
+        },
+        {
+            "name": "MongoDB",
+            "text": "90%",
+            "percent": "90",
+            "category": "backend"
+        },
+        {
+            "name": "Docker",
+            "text": "90%",
+            "percent": "90",
+            "category": "backend"
+        },
+        {
+            "name": "Kubernetes",
+            "text": "50%",
+            "percent": "50",
+            "category": "backend"
         }
     ],
     "Testimonials": [
@@ -201,7 +222,6 @@
         "phone": "09303174128",
         "email": "rezasalehidev@gmail.com",
         "Github": "https://github.com/rezasalehidev",
-        "twitter": "https://twitter.com/reza08189228",
         "linkedin": "https://www.linkedin.com/in/reza-salehi-28b040228/"
     },
     "Features": [

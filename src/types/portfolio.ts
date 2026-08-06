@@ -21,7 +21,6 @@ export interface ContactData {
   phone: string;
   email: string;
   Github: string;
-  twitter: string;
   linkedin: string;
 }
 
