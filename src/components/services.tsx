@@ -21,6 +21,7 @@ const FRONTEND_NAMES = new Set([
   "Material ui / Ant",
   "ReactQuery / RTK-query",
   "MicroFrontend",
+  "Angular Material / Vuetify",
 ]);
 
 const MOBILE_NAMES = new Set(["React Native", "Flutter"]);
