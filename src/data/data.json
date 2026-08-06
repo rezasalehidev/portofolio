@@ -20,26 +20,26 @@
     "Services": [
         {
             "name": "Javascript",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "Typescript",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "React",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "Next.js",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
@@ -50,62 +50,62 @@
         },
         {
             "name": "Vue",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "Angular",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "Nuxt",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "Pwa",
-            "text": "80%",
-            "percent": "80",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "FlexBox / CssGrid",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "Bootstrap",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "Tailwind css",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "Material ui / Ant",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "ReactQuery / RTK-query",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
             "name": "MicroFrontend",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
