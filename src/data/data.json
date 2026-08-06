@@ -18,6 +18,18 @@
     },
     "Services": [
         {
+            "name": "Javascript",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Typescript",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
             "name": "React",
             "text": "90%",
             "percent": "90",
@@ -49,18 +61,6 @@
         },
         {
             "name": "Nuxt",
-            "text": "90%",
-            "percent": "90",
-            "category": "frontend"
-        },
-        {
-            "name": "Javascript",
-            "text": "90%",
-            "percent": "90",
-            "category": "frontend"
-        },
-        {
-            "name": "Typescript",
             "text": "90%",
             "percent": "90",
             "category": "frontend"

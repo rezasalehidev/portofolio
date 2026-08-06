@@ -25,19 +25,30 @@ export const Header = ({ data }: HeaderProps): JSX.Element => {
   return (
     <header id="header">
       <div className="intro">
+        <div className="intro-glow intro-glow-one" aria-hidden="true"></div>
+        <div className="intro-glow intro-glow-two" aria-hidden="true"></div>
         <div className="overlay">
           <div className="container">
             <div className="row">
               <div className="col-md-10 col-md-offset-1 col-xs-12 intro-text">
+                <p className="intro-eyebrow">Frontend &amp; Mobile Developer</p>
                 <h2 className="intro-heading">
                   <span className="typed-text" ref={textRef}></span>
                 </h2>
                 <p className="intro-paragraph">
                   {data?.paragraph ?? "Loading"}
                 </p>
-                <a href="#about" className="btn btn-custom btn-lg page-scroll">
-                  About me
-                </a>
+                <div className="intro-actions">
+                  <a href="#about" className="btn btn-custom btn-lg page-scroll">
+                    About me
+                  </a>
+                  <a
+                    href="#portfolio"
+                    className="btn btn-outline-light page-scroll"
+                  >
+                    View projects
+                  </a>
+                </div>
               </div>
             </div>
           </div>

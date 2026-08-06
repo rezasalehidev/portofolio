@@ -7,14 +7,14 @@ interface ServicesProps {
 }
 
 const FRONTEND_NAMES = new Set([
+  "Javascript",
+  "Typescript",
   "React",
   "Next.js",
   "React Native",
   "Vue",
   "Angular",
   "Nuxt",
-  "Javascript",
-  "Typescript",
   "Pwa",
   "FlexBox / CssGrid",
   "Bootstrap",
