@@ -45,7 +45,7 @@
             "name": "React Native",
             "text": "95%",
             "percent": "95",
-            "category": "frontend"
+            "category": "mobile"
         },
         {
             "name": "Vue",
@@ -90,12 +90,6 @@
             "category": "frontend"
         },
         {
-            "name": "Flutter",
-            "text": "90%",
-            "percent": "90",
-            "category": "frontend"
-        },
-        {
             "name": "Material ui / Ant",
             "text": "90%",
             "percent": "90",
@@ -106,6 +100,12 @@
             "text": "90%",
             "percent": "90",
             "category": "frontend"
+        },
+        {
+            "name": "Flutter",
+            "text": "90%",
+            "percent": "90",
+            "category": "mobile"
         },
         {
             "name": "Nodejs",

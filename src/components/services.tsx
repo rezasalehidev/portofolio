@@ -11,7 +11,6 @@ const FRONTEND_NAMES = new Set([
   "Typescript",
   "React",
   "Next.js",
-  "React Native",
   "Vue",
   "Angular",
   "Nuxt",
@@ -19,16 +18,23 @@ const FRONTEND_NAMES = new Set([
   "FlexBox / CssGrid",
   "Bootstrap",
   "Tailwind css",
-  "Flutter",
   "Material ui / Ant",
   "ReactQuery / RTK-query",
 ]);
 
+const MOBILE_NAMES = new Set(["React Native", "Flutter"]);
+
 const groupSkills = (skills: ServiceItem[]) => {
   const frontend: ServiceItem[] = [];
+  const mobile: ServiceItem[] = [];
   const backend: ServiceItem[] = [];
 
   skills.forEach((skill) => {
+    if (skill.category === "mobile" || MOBILE_NAMES.has(skill.name)) {
+      mobile.push(skill);
+      return;
+    }
+
     if (skill.category === "backend") {
       backend.push(skill);
       return;
@@ -42,7 +48,7 @@ const groupSkills = (skills: ServiceItem[]) => {
     backend.push(skill);
   });
 
-  return { frontend, backend };
+  return { frontend, mobile, backend };
 };
 
 const SkillCard = ({ skill }: { skill: ServiceItem }) => (
@@ -57,8 +63,31 @@ const SkillCard = ({ skill }: { skill: ServiceItem }) => (
   </div>
 );
 
+const SkillsGroup = ({
+  title,
+  skills,
+}: {
+  title: string;
+  skills: ServiceItem[];
+}) => {
+  if (skills.length === 0) {
+    return null;
+  }
+
+  return (
+    <div className="skills-group">
+      <h3 className="skills-group-title">{title}</h3>
+      <div className="row skills-grid">
+        {skills.map((skill) => (
+          <SkillCard key={skill.name} skill={skill} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export const Services = ({ data }: ServicesProps): JSX.Element => {
-  const { frontend, backend } = groupSkills(data ?? []);
+  const { frontend, mobile, backend } = groupSkills(data ?? []);
 
   return (
     <div id="services" className="text-center">
@@ -71,23 +100,9 @@ export const Services = ({ data }: ServicesProps): JSX.Element => {
           "loading"
         ) : (
           <>
-            <div className="skills-group">
-              <h3 className="skills-group-title">Frontend</h3>
-              <div className="row skills-grid">
-                {frontend.map((skill) => (
-                  <SkillCard key={skill.name} skill={skill} />
-                ))}
-              </div>
-            </div>
-
-            <div className="skills-group">
-              <h3 className="skills-group-title">Backend</h3>
-              <div className="row skills-grid">
-                {backend.map((skill) => (
-                  <SkillCard key={skill.name} skill={skill} />
-                ))}
-              </div>
-            </div>
+            <SkillsGroup title="Frontend" skills={frontend} />
+            <SkillsGroup title="Mobile" skills={mobile} />
+            <SkillsGroup title="Backend" skills={backend} />
           </>
         )}
       </div>
