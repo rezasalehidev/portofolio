@@ -31,7 +31,7 @@ export const Header = ({ data }: HeaderProps): JSX.Element => {
           <div className="container">
             <div className="row">
               <div className="col-md-10 col-md-offset-1 col-xs-12 intro-text">
-                <p className="intro-eyebrow">Frontend &amp; Mobile Developer</p>
+                <p className="intro-eyebrow">Full-Stack Specialist · Frontend</p>
                 <h2 className="intro-heading">
                   <span className="typed-text" ref={textRef}></span>
                 </h2>
