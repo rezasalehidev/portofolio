@@ -17,7 +17,9 @@ const FRONTEND_NAMES = new Set([
   "Typescript",
   "Pwa",
   "FlexBox / CssGrid",
-  "Bootstrap / Tailwind css",
+  "Bootstrap",
+  "Tailwind css",
+  "Flutter",
   "Material ui / Ant",
   "ReactQuery / RTK-query",
 ]);

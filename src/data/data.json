@@ -78,7 +78,19 @@
             "category": "frontend"
         },
         {
-            "name": "Bootstrap / Tailwind css",
+            "name": "Bootstrap",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Tailwind css",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Flutter",
             "text": "90%",
             "percent": "90",
             "category": "frontend"
