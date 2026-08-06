@@ -22,16 +22,27 @@ export const Navigation = (): JSX.Element => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.classList.toggle("nav-open", menuOpen);
+    return () => document.body.classList.remove("nav-open");
+  }, [menuOpen]);
+
   const closeMenu = (): void => setMenuOpen(false);
 
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+    <nav
+      id="menu"
+      className={`navbar navbar-default navbar-fixed-top${
+        menuOpen ? " menu-open" : ""
+      }`}
+    >
       <div className="container">
         <div className="navbar-header">
           <button
             type="button"
-            className={`navbar-toggle${menuOpen ? "" : " collapsed"}`}
+            className={`navbar-toggle${menuOpen ? " is-open" : " collapsed"}`}
             aria-expanded={menuOpen}
+            aria-label={menuOpen ? "Close navigation" : "Open navigation"}
             aria-controls="bs-example-navbar-collapse-1"
             onClick={() => setMenuOpen((open) => !open)}
           >

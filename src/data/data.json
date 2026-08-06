@@ -20,92 +20,110 @@
         {
             "name": "React",
             "text": "90%",
-            "percent": "90"
+            "percent": "90",
+            "category": "frontend"
         },
         {
             "name": "Next.js",
             "text": "90%",
-            "percent": "90"
+            "percent": "90",
+            "category": "frontend"
         },
         {
             "name": "React Native",
             "text": "95%",
-            "percent": "95"
+            "percent": "95",
+            "category": "frontend"
         },
         {
-            "name": "Javascript",
+            "name": "Vue",
             "text": "90%",
-            "percent": "90"
-        },
-        {
-            "name": "Typescript",
-            "text": "90%",
-            "percent": "90"
-        },
-        {
-            "name": "Pwa",
-            "text": "80%",
-            "percent": "80"
-        },
-        {
-            "name": "FlexBox / CssGrid",
-            "text": "90%",
-            "percent": "90"
-        },
-        {
-            "name": "Bootstrap / Tailwind css",
-            "text": "90%",
-            "percent": "90"
-        },
-        {
-            "name": "Material ui / Ant",
-            "text": "90%",
-            "percent": "90"
-        },
-        {
-            "name": "RestFull / Graphql / grpc",
-            "text": "90%",
-            "percent": "90"
-        },
-        {
-            "name": "ReactQuery / RTK-query",
-            "text": "90%",
-            "percent": "90"
-        },
-        {
-            "name": "Nodejs",
-            "text": "80%",
-            "percent": "80"
-        },
-        {
-            "name": "Vue 3",
-            "text": "90%",
-            "percent": "90"
+            "percent": "90",
+            "category": "frontend"
         },
         {
             "name": "Angular",
             "text": "90%",
-            "percent": "90"
+            "percent": "90",
+            "category": "frontend"
         },
         {
             "name": "Nuxt",
             "text": "90%",
-            "percent": "90"
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Javascript",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Typescript",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Pwa",
+            "text": "80%",
+            "percent": "80",
+            "category": "frontend"
+        },
+        {
+            "name": "FlexBox / CssGrid",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Bootstrap / Tailwind css",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Material ui / Ant",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "ReactQuery / RTK-query",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Nodejs",
+            "text": "80%",
+            "percent": "80",
+            "category": "backend"
         },
         {
             "name": "NestJS",
             "text": "90%",
-            "percent": "90"
+            "percent": "90",
+            "category": "backend"
         },
         {
             "name": "Django",
             "text": "90%",
-            "percent": "90"
+            "percent": "90",
+            "category": "backend"
         },
         {
             "name": "Flask",
             "text": "90%",
-            "percent": "90"
+            "percent": "90",
+            "category": "backend"
+        },
+        {
+            "name": "RestFull / Graphql / grpc",
+            "text": "90%",
+            "percent": "90",
+            "category": "backend"
         }
     ],
     "Testimonials": [

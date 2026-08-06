@@ -12,6 +12,7 @@ export interface ServiceItem {
   name: string;
   text: string;
   percent: string | number;
+  category?: "frontend" | "backend";
 }
 
 export interface ContactData {
