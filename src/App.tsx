@@ -24,13 +24,17 @@ const App = (): JSX.Element => {
 
   useEffect(() => {
     setLandingPageData(JsonData as LandingPageData);
+  }, []);
+
+  useEffect(() => {
     AOS.init({
       duration: 800,
       once: true,
-      disable: "mobile",
       easing: "ease-out-cubic",
+      disable: mobile,
     });
-  }, []);
+    AOS.refreshHard();
+  }, [landingPageData, mobile]);
 
   return (
     <div className="app">

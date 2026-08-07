@@ -54,7 +54,7 @@ const groupSkills = (skills: ServiceItem[]) => {
 };
 
 const SkillCard = ({ skill }: { skill: ServiceItem }) => (
-  <div className="col-xs-12 col-sm-6 col-md-4" data-aos="fade-up">
+  <div className="col-xs-12 col-sm-6 col-md-4">
     <div className="service-desc">
       <div className="skill-header">
         <h3>{skill.name}</h3>

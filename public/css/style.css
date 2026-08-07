@@ -1081,6 +1081,15 @@ label {
 		overflow: hidden;
 	}
 
+	/* AOS can leave content invisible on mobile after React re-renders */
+	[data-aos],
+	[data-aos]:not(.aos-animate) {
+		opacity: 1 !important;
+		transform: none !important;
+		transition: none !important;
+		pointer-events: auto !important;
+	}
+
 	#menu {
 		padding: 8px 0;
 	}
