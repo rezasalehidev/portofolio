@@ -115,6 +115,12 @@
             "category": "frontend"
         },
         {
+            "name": "Dart",
+            "text": "90%",
+            "percent": "90",
+            "category": "mobile"
+        },
+        {
             "name": "Flutter",
             "text": "90%",
             "percent": "90",

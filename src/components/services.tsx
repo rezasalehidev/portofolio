@@ -24,7 +24,7 @@ const FRONTEND_NAMES = new Set([
   "Angular Material / Vuetify",
 ]);
 
-const MOBILE_NAMES = new Set(["React Native", "Flutter"]);
+const MOBILE_NAMES = new Set(["React Native", "Dart", "Flutter"]);
 
 const groupSkills = (skills: ServiceItem[]) => {
   const frontend: ServiceItem[] = [];
