@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import type { ContactData } from "../types/portfolio";
 
 interface ContactProps {
@@ -88,7 +88,9 @@ export const Contact = ({ data }: ContactProps): JSX.Element => {
           reply_to: email,
           message,
         },
-        EMAILJS_PUBLIC_KEY
+        {
+          publicKey: EMAILJS_PUBLIC_KEY,
+        }
       );
 
       setStatus("success");

@@ -68,10 +68,14 @@ declare module "react-bootstrap/ProgressBar" {
   export default ProgressBar;
 }
 
-declare module "emailjs-com" {
+declare module "@emailjs/browser" {
   interface EmailJSResponseStatus {
     status: number;
     text: string;
+  }
+
+  interface EmailJSOptions {
+    publicKey?: string;
   }
 
   const emailjs: {
@@ -79,13 +83,7 @@ declare module "emailjs-com" {
       serviceID: string,
       templateID: string,
       templateParams?: Record<string, string>,
-      userID?: string
-    ) => Promise<EmailJSResponseStatus>;
-    sendForm: (
-      serviceID: string,
-      templateID: string,
-      form: string | HTMLFormElement,
-      userID?: string
+      options?: EmailJSOptions | string
     ) => Promise<EmailJSResponseStatus>;
   };
 

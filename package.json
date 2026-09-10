@@ -1,12 +1,12 @@
 {
     "name": "project",
     "dependencies": {
+        "@emailjs/browser": "^4.4.1",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
         "animate.css": "^4.1.1",
         "aos": "^2.3.4",
-        "emailjs-com": "^2.6.4",
         "ityped": "^1.0.3",
         "react": "^17.0.1",
         "react-blurhash": "^0.3.0",
