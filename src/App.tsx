@@ -3,6 +3,7 @@ import AOS from "aos";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
+import { Experience } from "./components/experience";
 import { Services } from "./components/services";
 import { Gallery } from "./components/gallery";
 import { Contact } from "./components/contact";
@@ -50,6 +51,7 @@ const App = (): JSX.Element => {
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
+      <Experience data={landingPageData.Experience} />
       <Services data={landingPageData.Services} />
       <Gallery />
       <Contact data={landingPageData.Contact} />

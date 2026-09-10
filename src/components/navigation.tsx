@@ -5,6 +5,7 @@ import { UseSize } from "./useSize";
 
 const NAV_ITEMS = [
   { label: "About me", href: "#about" },
+  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#services" },
   { label: "Projects", href: "#portfolio" },
   { label: "Contact", href: "#message" },

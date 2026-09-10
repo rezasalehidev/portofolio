@@ -47,6 +47,16 @@ const projects: ProjectItem[] = [
     title: "Boxy",
     description: "Shipping platform",
   },
+  {
+    href: "https://play.google.com/store/apps/details?id=com.tryboxy.merchant&hl=en",
+    title: "Boxy Android",
+    description: "Merchant delivery app",
+  },
+  {
+    href: "https://apps.apple.com/us/app/boxy-%D8%A8%D9%88%D9%83%D8%B3%D9%8A/id6739261592",
+    title: "Boxy iOS",
+    description: "Merchant delivery app",
+  },
 ];
 
 export const Gallery = (): JSX.Element => {

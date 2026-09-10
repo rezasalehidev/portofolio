@@ -5,8 +5,24 @@ export interface HeaderData {
 
 export interface AboutData {
   paragraph: string;
-  Why: string[];
   careerStartYear?: number;
+}
+
+export interface ExperienceLink {
+  label: string;
+  url: string;
+}
+
+export interface ExperienceItem {
+  role: string;
+  company: string;
+  companyUrl?: string;
+  period: string;
+  location: string;
+  highlights: string[];
+  technologies: string[];
+  extras?: string[];
+  links?: ExperienceLink[];
 }
 
 export interface ServiceItem {
@@ -45,6 +61,7 @@ export interface TeamMember {
 export interface LandingPageData {
   Header?: HeaderData;
   About?: AboutData;
+  Experience?: ExperienceItem[];
   Services?: ServiceItem[];
   Contact?: ContactData;
   Testimonials?: TestimonialItem[];

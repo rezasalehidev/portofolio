@@ -5,7 +5,7 @@ interface AboutProps {
   data?: AboutData;
 }
 
-const DEFAULT_CAREER_START_YEAR = 2018;
+const DEFAULT_CAREER_START_YEAR = 2017;
 
 const getYearsOfExperience = (careerStartYear: number): number => {
   const currentYear = new Date().getFullYear();
@@ -33,20 +33,6 @@ export const About = ({ data }: AboutProps): JSX.Element => {
               <p data-aos="fade-up" data-aos-delay="100">
                 {paragraph}
               </p>
-              <h3 data-aos="fade-up" data-aos-delay="150">
-                Professional experiences
-              </h3>
-              <ul className="about-list">
-                {data?.Why.map((item, i) => (
-                  <li
-                    key={`${item}-${i}`}
-                    data-aos="fade-up"
-                    data-aos-delay={200 + i * 60}
-                  >
-                    {item}
-                  </li>
-                )) ?? "loading"}
-              </ul>
             </div>
           </div>
           <div

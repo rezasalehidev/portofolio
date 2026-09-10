@@ -1,23 +1,187 @@
 {
     "Header": {
         "title": "Reza Salehi",
-        "paragraph": "Full-stack specialist with a strong frontend focus, building polished web and app experiences."
+        "paragraph": "Full-stack specialist with a strong frontend focus—including deep Angular experience (RxJS, NgRx, Signals, Reactive Forms)—building polished web and app experiences."
     },
     "About": {
-        "paragraph": "Self-taught web and mobile programmer with {{years}} years of professional experience in more than ten projects. Strong skills in teamwork, communication, creativity, and meeting timelines. Passionate about learning and seeking new opportunities in the field",
-        "careerStartYear": 2018,
-        "Why": [
-            "React, Next js, freelancer and team worker",
-            "Vue, Nuxt, Angular Developer, Working with ssg/isr/ssr, optimize code, ...",
-            "React native Developer",
-            "Flutter Developer",
-            "Nodejs, Nestjs, Django, Flask",
-            "Master in creating mobile-first and responsive websites",
-            "Master in creating fully customized html/css component",
-            "Master in ui library like material ui and emotion",
-            "Experience working with RestFull and Graphql"
-        ]
+        "paragraph": "Self-taught web and mobile programmer with {{years}} years of professional experience across product companies and remote teams. Strong Angular and modern frontend skills (RxJS, NgRx, Signals, Reactive Forms, DI, Router), plus React/Vue and full-stack delivery. Excellent teamwork, communication, and timeline ownership—passionate about learning and new opportunities.",
+        "careerStartYear": 2017
     },
+    "Experience": [
+        {
+            "role": "Senior Full-Stack Developer",
+            "company": "Boxy",
+            "companyUrl": "https://www.tryboxy.com/en/",
+            "period": "03/2024 – Present",
+            "location": "Dubai, UAE (Remote)",
+            "links": [
+                {
+                    "label": "Android App",
+                    "url": "https://play.google.com/store/apps/details?id=com.tryboxy.merchant&hl=en"
+                },
+                {
+                    "label": "iOS App",
+                    "url": "https://apps.apple.com/us/app/boxy-%D8%A8%D9%88%D9%83%D8%B3%D9%8A/id6739261592"
+                }
+            ],
+            "highlights": [
+                "Spearheaded unified merchant workflows across responsive web and mobile applications (Angular, React, Vue, Nuxt.js, React Native, NestJS, Django), accelerating cross-client release velocity from 3 weeks down to 9 days.",
+                "Built and maintained Angular merchant surfaces with Reactive Forms, Angular Router, and Dependency Injection, aligning feature delivery with React/Vue/Nuxt client apps under a shared product roadmap.",
+                "Refactored high-concurrency order dispatch and payment processing pipelines, achieving a 38% reduction in API response latency and maintaining 99.95% transaction success during peak traffic.",
+                "Architected a multi-brand component design system and unified state management (NgRx/RxJS on Angular, Zustand and RTK Query on React), ensuring synchronized real-time data across 3 separate merchant touchpoints."
+            ],
+            "technologies": [
+                "TypeScript",
+                "Angular",
+                "RxJS",
+                "NgRx",
+                "Reactive Forms",
+                "Angular Router",
+                "React",
+                "Vue",
+                "Nuxt.js",
+                "React Native",
+                "NestJS",
+                "Node.js",
+                "Django",
+                "PostgreSQL",
+                "Redis"
+            ]
+        },
+        {
+            "role": "Full-Stack Developer",
+            "company": "Agileful",
+            "companyUrl": "https://agileful.com",
+            "period": "01/2019 – 02/2021",
+            "location": "Berlin, Germany (Remote)",
+            "highlights": [
+                "Developed high-availability full-stack capabilities across 5 distinct business verticals, including live audio/video streaming and interactive collaboration suites, working in Agile/Scrum ceremonies with iterative sprint delivery.",
+                "Constructed asynchronous microservices powered by Node.js, NestJS, and Redis pub/sub queues, handling 100k+ concurrent WebSocket connections with zero downtime.",
+                "Integrated WebRTC media protocols into responsive dashboards (including Angular and React clients), reducing packet loss and audio latency by 22% for distributed enterprise video rooms."
+            ],
+            "technologies": [
+                "Node.js",
+                "NestJS",
+                "Django",
+                "Angular",
+                "RxJS",
+                "React",
+                "Vue",
+                "WebSockets",
+                "Redis",
+                "Docker",
+                "Agile / Scrum"
+            ]
+        },
+        {
+            "role": "Senior Frontend Developer",
+            "company": "Espad",
+            "companyUrl": "https://espad.ir",
+            "period": "04/2022 – 03/2023",
+            "location": "Tehran, Iran (Remote)",
+            "highlights": [
+                "Overhauled enterprise Angular application architecture with lazy-loaded Angular Router modules, Dependency Injection patterns, and standalone/feature boundaries—elevating Core Web Vitals, shrinking initial bundle size by 28%, and lowering bounce rates by 15%.",
+                "Delivered complex domain workflows with Angular Reactive Forms, template-driven form migration paths, and validation pipelines, while coordinating Agile sprints, backlog grooming, and iterative release planning with cross-functional stakeholders.",
+                "Implemented scalable client state and async data flows with RxJS operators, NgRx store/effects, and Angular Signals where appropriate, eliminating redundant HTTP round-trips and lifting checkout conversion by 18%.",
+                "Automated continuous integration and deployment with GitHub Actions and Docker, raising team release velocity and deployment frequency by 50% within Agile delivery cycles."
+            ],
+            "technologies": [
+                "Angular",
+                "TypeScript",
+                "RxJS",
+                "NgRx",
+                "Angular Signals",
+                "Reactive Forms",
+                "Angular Router",
+                "Dependency Injection",
+                "Angular Material",
+                "SCSS",
+                "Agile / Scrum",
+                "GitHub Actions",
+                "Docker"
+            ]
+        },
+        {
+            "role": "Frontend Engineer",
+            "company": "Apsaaz",
+            "companyUrl": "https://apsaaz.com",
+            "period": "02/2021 – 04/2022",
+            "location": "Tehran, Iran (Remote)",
+            "highlights": [
+                "Crafted scalable frontend architectures for 10+ client applications across social networking, marketplace commerce, and virtual meeting productivity tools.",
+                "Published an internal reusable component library featuring 50+ accessible React and React Native primitives, curtailing multi-project feature build time by 30%.",
+                "Engineered resilient client-side authentication and state synchronization via Redux Toolkit, providing sub-100ms UI responsiveness across constrained network connections."
+            ],
+            "technologies": [
+                "React",
+                "React Native",
+                "Redux Toolkit",
+                "RESTful APIs",
+                "Material UI"
+            ]
+        },
+        {
+            "role": "Senior Front-End Engineering Lead",
+            "company": "Apsy",
+            "companyUrl": "https://apsy.io",
+            "period": "03/2023 – 03/2024",
+            "location": "San Francisco, USA (Remote)",
+            "highlights": [
+                "Directed a distributed engineering squad of 12 developers, governing architectural standards, pull-request quality gates, and agile sprint delivery for generative AI builder platforms.",
+                "Pioneered real-time streaming interfaces for generative AI application customization with React, WebSockets, and Tailwind CSS, driving a 60% increase in weekly active user retention.",
+                "Formulated automated regression testing pipelines and real-time telemetry utilizing Jest and Sentry, curbing production bug escapes by 42%."
+            ],
+            "technologies": [
+                "React",
+                "Next.js",
+                "TypeScript",
+                "WebSockets",
+                "Tailwind CSS",
+                "Jest",
+                "Sentry"
+            ]
+        },
+        {
+            "role": "Full-Stack Developer",
+            "company": "Tara",
+            "companyUrl": "https://tara.mobi",
+            "period": "02/2018 – 01/2019",
+            "location": "Tehran, Iran (Hybrid)",
+            "highlights": [
+                "Spearheaded full-stack development of client web portals and Progressive Web Applications (PWA) using React, Next.js, and Node.js REST services, elevating active task completion rates by 28%.",
+                "Engineered Next.js server-side rendering (SSR) and Service Worker asset caching architectures, reducing First Contentful Paint (FCP) by 45% and elevating 30-day user retention by 20%.",
+                "Architected high-throughput MongoDB aggregation pipelines and indexing models, cutting database query execution latency by 38% across 15,000+ active mobile user accounts."
+            ],
+            "technologies": [
+                "React",
+                "Next.js",
+                "Node.js",
+                "Vue.js",
+                "Nuxt.js",
+                "PWA",
+                "MongoDB",
+                "REST APIs"
+            ]
+        },
+        {
+            "role": "Junior / Freelance Web Developer",
+            "company": "Ponisha",
+            "period": "06/2017 – 01/2018",
+            "location": "Iran (Remote)",
+            "highlights": [
+                "Engineered 12+ bespoke client web applications and responsive e-commerce storefronts using JavaScript, HTML5/SCSS, Node.js, and MySQL, achieving a 100% on-time project completion rate and a 5.0/5.0 client satisfaction rating.",
+                "Constructed reusable UI component templates and standardized cross-browser workflows, reducing subsequent client maintenance tickets by 35% and accelerating page load speeds by 25%.",
+                "Implemented structured SEO schemas and semantic DOM architectures across client landing pages, driving a 40% average increase in organic search traffic within 90 days of launch."
+            ],
+            "technologies": [
+                "JavaScript",
+                "HTML5",
+                "CSS3",
+                "Node.js",
+                "MySQL"
+            ]
+        }
+    ],
     "Services": [
         {
             "name": "Javascript",
@@ -57,6 +221,36 @@
         },
         {
             "name": "Angular",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "RxJS",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "NgRx",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Angular Signals",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Reactive Forms",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "Angular Router / DI",
             "text": "95%",
             "percent": "95",
             "category": "frontend"
@@ -111,8 +305,8 @@
         },
         {
             "name": "Angular Material / Vuetify",
-            "text": "90%",
-            "percent": "90",
+            "text": "95%",
+            "percent": "95",
             "category": "frontend"
         },
         {
