@@ -31,7 +31,7 @@ export const Header = ({ data }: HeaderProps): JSX.Element => {
                     pointerRepel={42}
                     repelRadius={120}
                     idleDrift={0.8}
-                    trigger="hover"
+                    trigger="mount"
                     fontSize="clamp(2.6rem, 10vw, 6.5rem)"
                     fontWeight={800}
                     fontFamily="Raleway, sans-serif"
