@@ -1,92 +1,77 @@
 import React, { useEffect, useState } from "react";
+import GooeyNav from "./react-bits/gooey-nav";
+import StaggeredMenu from "./react-bits/staggered-menu";
+import { UseSize } from "./useSize";
+
+const NAV_ITEMS = [
+  { label: "About me", href: "#about" },
+  { label: "Skills", href: "#services" },
+  { label: "Projects", href: "#portfolio" },
+  { label: "Contact", href: "#message" },
+];
+
+const STAGGERED_ITEMS = NAV_ITEMS.map((item) => ({
+  label: item.label,
+  ariaLabel: item.label,
+  link: item.href,
+}));
 
 export const Navigation = (): JSX.Element => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const { mobile } = UseSize();
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = (): void => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const menu = document.getElementById("menu");
-      if (!menu) {
-        return;
-      }
-
-      if (scrollTop > 30) {
-        menu.classList.add("blur-active");
-      } else {
-        menu.classList.remove("blur-active");
-      }
+      setScrolled(scrollTop > 30);
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    document.body.classList.toggle("nav-open", menuOpen);
-    return () => document.body.classList.remove("nav-open");
-  }, [menuOpen]);
-
-  const closeMenu = (): void => setMenuOpen(false);
+  if (mobile) {
+    return (
+      <StaggeredMenu
+        className="portfolio-staggered-menu"
+        isFixed
+        position="right"
+        items={STAGGERED_ITEMS}
+        displaySocials={false}
+        displayItemNumbering
+        logoText="Reza Salehi"
+        menuButtonColor="#333333"
+        openMenuButtonColor="#ffffff"
+        changeMenuColorOnOpen
+        colors={["#5ca9fb", "#6372ff"]}
+        accentColor="#5ca9fb"
+        closeOnClickAway
+      />
+    );
+  }
 
   return (
     <nav
       id="menu"
-      className={`navbar navbar-default navbar-fixed-top${
-        menuOpen ? " menu-open" : ""
+      className={`navbar navbar-default navbar-fixed-top portfolio-gooey-nav${
+        scrolled ? " blur-active" : ""
       }`}
     >
-      <div className="container">
-        <div className="navbar-header">
-          <button
-            type="button"
-            className={`navbar-toggle${menuOpen ? " is-open" : " collapsed"}`}
-            aria-expanded={menuOpen}
-            aria-label={menuOpen ? "Close navigation" : "Open navigation"}
-            aria-controls="bs-example-navbar-collapse-1"
-            onClick={() => setMenuOpen((open) => !open)}
-          >
-            <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-          </button>
-          <a
-            className="navbar-brand page-scroll"
-            href="#page-top"
-            onClick={closeMenu}
-          >
-            Reza Salehi
-          </a>
-        </div>
-
-        <div
-          className={`navbar-collapse collapse${menuOpen ? " in" : ""}`}
-          id="bs-example-navbar-collapse-1"
-        >
-          <ul className="nav navbar-nav navbar-right">
-            <li>
-              <a href="#about" className="page-scroll" onClick={closeMenu}>
-                About me
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="page-scroll" onClick={closeMenu}>
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#portfolio" className="page-scroll" onClick={closeMenu}>
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#message" className="page-scroll" onClick={closeMenu}>
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div className="container nav-desktop-row">
+        <a className="navbar-brand page-scroll" href="#page-top">
+          Reza Salehi
+        </a>
+        <GooeyNav
+          items={NAV_ITEMS}
+          animationTime={600}
+          particleCount={12}
+          particleDistances={[80, 12]}
+          particleR={90}
+          timeVariance={260}
+          initialActiveIndex={0}
+          colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+        />
       </div>
     </nav>
   );

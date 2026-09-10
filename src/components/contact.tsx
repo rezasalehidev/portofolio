@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import type { ContactData } from "../types/portfolio";
+import SpecularButton from "./react-bits/specular-button";
 
 interface ContactProps {
   data?: ContactData;
@@ -183,13 +184,25 @@ export const Contact = ({ data }: ContactProps): JSX.Element => {
               </p>
             ) : null}
 
-            <button
-              type="submit"
-              className="btn btn-custom btn-lg"
-              disabled={status === "sending"}
-            >
-              {status === "sending" ? "Sending..." : "Send message"}
-            </button>
+            <div className="contact-submit-wrap">
+              <SpecularButton
+                type="submit"
+                size="md"
+                radius={25}
+                disabled={status === "sending"}
+                textColor="#ffffff"
+                lineColor="#5ca9fb"
+                baseColor="#6372ff"
+                tint="#6372ff"
+                tintOpacity={0.85}
+                blur={4}
+                intensity={1.1}
+                autoAnimate
+                className="contact-specular-btn"
+              >
+                {status === "sending" ? "Sending..." : "Send message"}
+              </SpecularButton>
+            </div>
           </form>
         </div>
       </div>

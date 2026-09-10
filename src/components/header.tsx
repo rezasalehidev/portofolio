@@ -1,5 +1,6 @@
 import React from "react";
 import ParticleText from "./particle-text";
+import SpecularButton from "./react-bits/specular-button";
 import type { HeaderData } from "../types/portfolio";
 
 interface HeaderProps {
@@ -50,15 +51,38 @@ export const Header = ({ data }: HeaderProps): JSX.Element => {
                   data-aos="fade-up"
                   data-aos-delay="350"
                 >
-                  <a href="#about" className="btn btn-custom btn-lg page-scroll">
+                  <SpecularButton
+                    href="#about"
+                    size="md"
+                    radius={25}
+                    textColor="#ffffff"
+                    lineColor="#ffffff"
+                    baseColor="#5ca9fb"
+                    tint="#5ca9fb"
+                    tintOpacity={0.28}
+                    blur={8}
+                    intensity={1.1}
+                    autoAnimate
+                    className="hero-specular-btn"
+                  >
                     About me
-                  </a>
-                  <a
+                  </SpecularButton>
+                  <SpecularButton
                     href="#portfolio"
-                    className="btn btn-outline-light page-scroll"
+                    size="md"
+                    radius={25}
+                    textColor="#ffffff"
+                    lineColor="#ffffff"
+                    baseColor="#3f5bcc"
+                    tint="#ffffff"
+                    tintOpacity={0.08}
+                    blur={6}
+                    intensity={1}
+                    autoAnimate
+                    className="hero-specular-btn hero-specular-btn-outline"
                   >
                     View projects
-                  </a>
+                  </SpecularButton>
                 </div>
               </div>
             </div>

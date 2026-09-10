@@ -1397,3 +1397,144 @@ header .intro-text {
 		width: min(86%, 240px);
 	}
 }
+
+/* React Bits integrations */
+.nav-desktop-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.portfolio-gooey-nav {
+	overflow: hidden;
+}
+
+.portfolio-gooey-nav .navbar-brand {
+	float: none;
+	margin: 0;
+}
+
+.portfolio-gooey-nav .gooey-nav-container {
+	--color-1: #5ca9fb;
+	--color-2: #6372ff;
+	--color-3: #3f78c7;
+	--color-4: #608dfd;
+	overflow: hidden;
+	isolation: isolate;
+}
+
+.portfolio-gooey-nav .gooey-nav-container nav ul {
+	gap: 0.35em;
+	color: #555;
+	text-shadow: none;
+	padding: 0;
+}
+
+.portfolio-gooey-nav .gooey-nav-container nav ul li,
+.portfolio-gooey-nav .gooey-nav-container nav ul li a {
+	color: #555;
+}
+
+.portfolio-gooey-nav .gooey-nav-container nav ul li a {
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	text-decoration: none;
+}
+
+.portfolio-gooey-nav .gooey-nav-container nav ul li.active,
+.portfolio-gooey-nav .gooey-nav-container nav ul li.active a {
+	color: #1f386e;
+}
+
+.portfolio-gooey-nav .gooey-nav-container .effect.text {
+	color: #555;
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+}
+
+.portfolio-gooey-nav .gooey-nav-container .effect.text.active {
+	color: #1f386e;
+}
+
+/* Gooey filter black backdrop breaks on light nav — keep pill + particles only */
+.portfolio-gooey-nav .gooey-nav-container .effect.filter {
+	filter: none;
+	mix-blend-mode: normal;
+	overflow: hidden;
+	border-radius: 100vw;
+}
+
+.portfolio-gooey-nav .gooey-nav-container .effect.filter::before {
+	display: none;
+}
+
+.portfolio-gooey-nav .gooey-nav-container .effect.filter::after {
+	background: #fff;
+	box-shadow: 0 4px 14px rgba(99, 114, 255, 0.18);
+}
+
+.portfolio-staggered-menu {
+	z-index: 600 !important;
+}
+
+.portfolio-staggered-menu .staggered-menu-header {
+	padding: 1.1em 1.25em;
+	background: rgba(255, 255, 255, 0.92);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.06);
+}
+
+.portfolio-staggered-menu .sm-logo-text {
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #333;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.4px;
+}
+
+.portfolio-staggered-menu .sm-toggle {
+	color: #333;
+}
+
+.portfolio-staggered-menu .staggered-menu-panel {
+	background: #0f1b33;
+}
+
+.portfolio-staggered-menu[data-open] .staggered-menu-header {
+	background: transparent;
+	box-shadow: none;
+}
+
+.portfolio-staggered-menu[data-open] .sm-logo-text {
+	color: #fff;
+}
+
+.hero-specular-btn {
+	min-width: 160px;
+}
+
+.intro-actions .specular-button {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+}
+
+.contact-submit-wrap {
+	margin-top: 8px;
+}
+
+@media (max-width: 767px) {
+	.portfolio-staggered-menu .staggered-menu-header {
+		padding: 0.9em 1em;
+	}
+}
