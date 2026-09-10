@@ -53,8 +53,18 @@ const groupSkills = (skills: ServiceItem[]) => {
   return { frontend, mobile, backend };
 };
 
-const SkillCard = ({ skill }: { skill: ServiceItem }) => (
-  <div className="col-xs-12 col-sm-6 col-md-4">
+const SkillCard = ({
+  skill,
+  index,
+}: {
+  skill: ServiceItem;
+  index: number;
+}) => (
+  <div
+    className="col-xs-12 col-sm-6 col-md-4"
+    data-aos="zoom-in"
+    data-aos-delay={Math.min(index * 70, 420)}
+  >
     <div className="service-desc">
       <div className="skill-header">
         <h3>{skill.name}</h3>
@@ -77,11 +87,11 @@ const SkillsGroup = ({
   }
 
   return (
-    <div className="skills-group">
+    <div className="skills-group" data-aos="fade-up">
       <h3 className="skills-group-title">{title}</h3>
       <div className="row skills-grid">
-        {skills.map((skill) => (
-          <SkillCard key={skill.name} skill={skill} />
+        {skills.map((skill, index) => (
+          <SkillCard key={skill.name} skill={skill} index={index} />
         ))}
       </div>
     </div>
@@ -94,7 +104,7 @@ export const Services = ({ data }: ServicesProps): JSX.Element => {
   return (
     <div id="services" className="text-center">
       <div className="container">
-        <div className="section-title">
+        <div className="section-title" data-aos="fade-up">
           <h2>Skills</h2>
         </div>
 

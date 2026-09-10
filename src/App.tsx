@@ -28,8 +28,9 @@ const App = (): JSX.Element => {
 
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 900,
       once: true,
+      offset: 80,
       easing: "ease-out-cubic",
       disable: mobile,
     });

@@ -53,18 +53,19 @@ export const Gallery = (): JSX.Element => {
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
-        <div className="section-title">
+        <div className="section-title" data-aos="fade-up">
           <h2>Projects</h2>
-          <p className="portfolio-note">
+          <p className="portfolio-note" data-aos="fade-up" data-aos-delay="100">
             Please turn on your VPN before viewing the sample projects
           </p>
         </div>
         <div className="row portfolio-grid">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <div
               key={project.title}
               className="col-xs-12 col-sm-6 col-md-4 portfolio-card"
               data-aos="fade-up"
+              data-aos-delay={Math.min(index * 80, 400)}
             >
               <div className="ih-item circle colored effect1">
                 <a

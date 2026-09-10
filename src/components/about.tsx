@@ -28,20 +28,31 @@ export const About = ({ data }: AboutProps): JSX.Element => {
       <div className="container">
         <div className="row about-row">
           <div className="col-xs-12 col-md-6">
-            <div className="about-text" data-aos="fade-up">
-              <h2>About me</h2>
-              <p>{paragraph}</p>
-              <h3>Professional experiences</h3>
+            <div className="about-text" data-aos="fade-right">
+              <h2 data-aos="fade-up">About me</h2>
+              <p data-aos="fade-up" data-aos-delay="100">
+                {paragraph}
+              </p>
+              <h3 data-aos="fade-up" data-aos-delay="150">
+                Professional experiences
+              </h3>
               <ul className="about-list">
                 {data?.Why.map((item, i) => (
-                  <li key={`${item}-${i}`}>{item}</li>
+                  <li
+                    key={`${item}-${i}`}
+                    data-aos="fade-up"
+                    data-aos-delay={200 + i * 60}
+                  >
+                    {item}
+                  </li>
                 )) ?? "loading"}
               </ul>
             </div>
           </div>
           <div
             className="col-xs-12 col-md-6 about-image-wrap"
-            data-aos="fade-up"
+            data-aos="fade-left"
+            data-aos-delay="150"
           >
             <img
               src="img/sd.jpg"

@@ -9,12 +9,18 @@ export const Contact = ({ data }: ContactProps): JSX.Element => {
   return (
     <div id="contact">
       <div className="container">
-        <div className="section-title text-center">
+        <div className="section-title text-center" data-aos="fade-up">
           <h2>Get in touch</h2>
-          <p>Feel free to reach out for collaborations or opportunities.</p>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Feel free to reach out for collaborations or opportunities.
+          </p>
         </div>
         <div className="row contact-row">
-          <div className="col-xs-12 col-sm-6 contact-info" data-aos="fade-up">
+          <div
+            className="col-xs-12 col-sm-6 contact-info"
+            data-aos="fade-right"
+            data-aos-delay="150"
+          >
             <div className="contact-item">
               <span>
                 <i className="fa fa-map-marker"></i> Address
@@ -22,7 +28,11 @@ export const Contact = ({ data }: ContactProps): JSX.Element => {
               <p>{data?.address ?? "loading"}</p>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-6 contact-info" data-aos="fade-up">
+          <div
+            className="col-xs-12 col-sm-6 contact-info"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <div className="contact-item">
               <span>
                 <i className="fa fa-envelope-o"></i> Email
@@ -37,7 +47,7 @@ export const Contact = ({ data }: ContactProps): JSX.Element => {
             </div>
           </div>
         </div>
-        <div className="social" data-aos="fade-up">
+        <div className="social" data-aos="zoom-in" data-aos-delay="250">
           <ul>
             <li>
               <a

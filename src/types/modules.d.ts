@@ -2,6 +2,7 @@ declare module "aos" {
   interface AosOptions {
     duration?: number;
     once?: boolean;
+    offset?: number;
     disable?: boolean | "mobile" | "phone" | "tablet" | "desktop";
     easing?: string;
   }

@@ -27,6 +27,8 @@ declare module "react" {
 
   export function useRef<T>(initialValue: T | null): RefObject<T>;
 
+  export type CSSProperties = Record<string, string | number | undefined>;
+
   const React: {
     StrictMode: FC<{ children?: ReactNode }>;
   };
