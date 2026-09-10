@@ -81,7 +81,7 @@ export const Navigation = (): JSX.Element => {
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll" onClick={closeMenu}>
+              <a href="#message" className="page-scroll" onClick={closeMenu}>
                 Contact
               </a>
             </li>

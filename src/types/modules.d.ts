@@ -68,6 +68,30 @@ declare module "react-bootstrap/ProgressBar" {
   export default ProgressBar;
 }
 
+declare module "emailjs-com" {
+  interface EmailJSResponseStatus {
+    status: number;
+    text: string;
+  }
+
+  const emailjs: {
+    send: (
+      serviceID: string,
+      templateID: string,
+      templateParams?: Record<string, string>,
+      userID?: string
+    ) => Promise<EmailJSResponseStatus>;
+    sendForm: (
+      serviceID: string,
+      templateID: string,
+      form: string | HTMLFormElement,
+      userID?: string
+    ) => Promise<EmailJSResponseStatus>;
+  };
+
+  export default emailjs;
+}
+
 declare module "animate.css";
 declare module "aos/dist/aos.css";
 declare module "*.css";
