@@ -4,7 +4,7 @@
         "paragraph": "Full-stack specialist with a strong frontend focus—building polished web and app experiences."
     },
     "About": {
-        "paragraph": "Self-taught web and mobile programmer with {{years}} years of professional experience across product companies and remote teams. Strong Angular and modern frontend skills (RxJS, NgRx, Signals, Reactive Forms, DI, Router), plus React/Vue and full-stack delivery. Excellent teamwork, communication, and timeline ownership—passionate about learning and new opportunities.",
+        "paragraph": "Self-taught full-stack web and mobile developer with {{years}} years of professional experience across product companies and remote teams. Strong frontend skills in React, Vue, and Angular, plus backend delivery with Node.js, NestJS, Django, and Flask. Excellent teamwork, communication, and timeline ownership—passionate about learning and new opportunities.",
         "careerStartYear": 2017
     },
     "Experience": [
