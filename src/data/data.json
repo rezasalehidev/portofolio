@@ -25,22 +25,17 @@
                 }
             ],
             "highlights": [
-                "Spearheaded unified merchant workflows across responsive web and mobile applications (Angular, React, Vue, Nuxt.js, React Native, NestJS, Django), accelerating cross-client release velocity from 3 weeks down to 9 days.",
-                "Built and maintained Angular merchant surfaces with Reactive Forms, Angular Router, and Dependency Injection, aligning feature delivery with React/Vue/Nuxt client apps under a shared product roadmap.",
+                "Spearheaded unified merchant workflows across responsive web and mobile applications (React, Vue, Nuxt.js, React Native, NestJS, Django), accelerating cross-client release velocity from 3 weeks down to 9 days.",
+                "Built and maintained merchant surfaces across React, Vue, and Nuxt.js client apps under a shared product roadmap, aligning feature delivery for web and mobile.",
                 "Refactored high-concurrency order dispatch and payment processing pipelines, achieving a 38% reduction in API response latency and maintaining 99.95% transaction success during peak traffic.",
-                "Architected a multi-brand component design system and unified state management (NgRx/RxJS on Angular, Zustand and RTK Query on React), ensuring synchronized real-time data across 3 separate merchant touchpoints."
+                "Architected a multi-brand component design system and unified state management with Zustand and RTK Query, ensuring synchronized real-time data across 3 separate merchant touchpoints."
             ],
             "technologies": [
-                "TypeScript",
-                "Angular",
-                "RxJS",
-                "NgRx",
-                "Reactive Forms",
-                "Angular Router",
                 "React",
                 "Vue",
                 "Nuxt.js",
                 "React Native",
+                "TypeScript",
                 "NestJS",
                 "Node.js",
                 "Django",
