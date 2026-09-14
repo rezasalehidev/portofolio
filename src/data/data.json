@@ -124,11 +124,12 @@
             "location": "San Francisco, USA (Remote)",
             "highlights": [
                 "Directed a distributed engineering squad of 12 developers, governing architectural standards, pull-request quality gates, and agile sprint delivery for generative AI builder platforms.",
-                "Pioneered real-time streaming interfaces for generative AI application customization with React, WebSockets, and Tailwind CSS, driving a 60% increase in weekly active user retention.",
+                "Pioneered real-time streaming interfaces for generative AI application customization with React, Vue, WebSockets, and Tailwind CSS, driving a 60% increase in weekly active user retention.",
                 "Formulated automated regression testing pipelines and real-time telemetry utilizing Jest and Sentry, curbing production bug escapes by 42%."
             ],
             "technologies": [
                 "React",
+                "Vue",
                 "Next.js",
                 "TypeScript",
                 "WebSockets",
