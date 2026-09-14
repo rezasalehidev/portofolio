@@ -25,10 +25,12 @@
                 }
             ],
             "highlights": [
+                "Led senior full-stack delivery for Boxy’s merchant logistics platform across web, Android, and iOS—owning features from API design through React/Vue/Nuxt.js and React Native client release.",
                 "Spearheaded unified merchant workflows across responsive web and mobile applications (React, Vue, Nuxt.js, React Native, NestJS, Django), accelerating cross-client release velocity from 3 weeks down to 9 days.",
-                "Built and maintained merchant surfaces across React, Vue, and Nuxt.js client apps under a shared product roadmap, aligning feature delivery for web and mobile.",
+                "Built and maintained shared merchant surfaces and product modules across React, Vue, and Nuxt.js apps under one roadmap, keeping web and mobile feature parity for shipping, tracking, and order operations.",
                 "Refactored high-concurrency order dispatch and payment processing pipelines, achieving a 38% reduction in API response latency and maintaining 99.95% transaction success during peak traffic.",
-                "Architected a multi-brand component design system and unified state management with Zustand and RTK Query, ensuring synchronized real-time data across 3 separate merchant touchpoints."
+                "Architected a multi-brand component design system and unified state management with Zustand and RTK Query, ensuring synchronized real-time data across 3 separate merchant touchpoints.",
+                "Hardened NestJS and Django services with PostgreSQL and Redis for high-throughput shipping and payment flows, improving reliability for merchants running daily delivery operations at scale."
             ],
             "technologies": [
                 "React",
@@ -40,7 +42,9 @@
                 "Node.js",
                 "Django",
                 "PostgreSQL",
-                "Redis"
+                "Redis",
+                "Zustand",
+                "RTK Query"
             ]
         },
         {
