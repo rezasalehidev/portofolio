@@ -50,19 +50,24 @@
             "period": "01/2019 – 02/2021",
             "location": "Berlin, Germany (Remote)",
             "highlights": [
-                "Developed high-availability full-stack capabilities across 5 distinct business verticals, including live audio/video streaming and interactive collaboration suites, working in Agile/Scrum ceremonies with iterative sprint delivery.",
-                "Constructed asynchronous microservices powered by Node.js, NestJS, and Redis pub/sub queues, handling 100k+ concurrent WebSocket connections with zero downtime.",
-                "Integrated WebRTC media protocols into responsive dashboards (including Angular and React clients), reducing packet loss and audio latency by 22% for distributed enterprise video rooms."
+                "Owned end-to-end full-stack delivery across 5 business verticals—live audio/video streaming, interactive collaboration suites, dashboards, and supporting APIs—shipping in Agile/Scrum sprints with backlog grooming, demos, and iterative releases.",
+                "Built high-availability React, Vue, and Angular client applications with TypeScript, shared design patterns, and reusable UI modules that accelerated feature rollout across multiple product lines.",
+                "Constructed asynchronous microservices with Node.js, NestJS, and Redis pub/sub queues, sustaining 100k+ concurrent WebSocket connections with zero downtime under production load.",
+                "Integrated WebRTC media pipelines into responsive enterprise dashboards, cutting packet loss and audio latency by 22% for distributed video rooms and real-time collaboration sessions.",
+                "Hardened backend services with Django and NestJS REST/WebSocket APIs, Dockerized deployments, and monitoring-friendly service boundaries that improved release reliability across multi-team product streams.",
+                "Partnered with product and QA in cross-functional Agile ceremonies to prioritize roadmap work, reduce production incidents, and keep multi-vertical delivery synchronized."
             ],
             "technologies": [
+                "React",
+                "Vue",
+                "Angular",
+                "TypeScript",
+                "RxJS",
                 "Node.js",
                 "NestJS",
                 "Django",
-                "Angular",
-                "RxJS",
-                "React",
-                "Vue",
                 "WebSockets",
+                "WebRTC",
                 "Redis",
                 "Docker",
                 "Agile / Scrum"
