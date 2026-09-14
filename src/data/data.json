@@ -97,26 +97,6 @@
             ]
         },
         {
-            "role": "Frontend Engineer",
-            "company": "Apsaaz",
-            "companyUrl": "https://apsaaz.com",
-            "period": "02/2021 – 04/2022",
-            "location": "Tehran, Iran (Remote)",
-            "highlights": [
-                "Crafted scalable frontend architectures with React and Vue for 10+ client applications across social networking, marketplace commerce, and virtual meeting productivity tools.",
-                "Published an internal reusable component library featuring 50+ accessible React, Vue, and React Native primitives, curtailing multi-project feature build time by 30%.",
-                "Engineered resilient client-side authentication and state synchronization via Redux Toolkit, providing sub-100ms UI responsiveness across constrained network connections."
-            ],
-            "technologies": [
-                "React",
-                "Vue",
-                "React Native",
-                "Redux Toolkit",
-                "RESTful APIs",
-                "Material UI"
-            ]
-        },
-        {
             "role": "Senior Front-End Engineering Lead",
             "company": "Apsy",
             "companyUrl": "https://apsy.io",
@@ -136,6 +116,26 @@
                 "Tailwind CSS",
                 "Jest",
                 "Sentry"
+            ]
+        },
+        {
+            "role": "Frontend Engineer",
+            "company": "Apsaaz",
+            "companyUrl": "https://apsaaz.com",
+            "period": "02/2021 – 04/2022",
+            "location": "Tehran, Iran (Remote)",
+            "highlights": [
+                "Crafted scalable frontend architectures with React and Vue for 10+ client applications across social networking, marketplace commerce, and virtual meeting productivity tools.",
+                "Published an internal reusable component library featuring 50+ accessible React, Vue, and React Native primitives, curtailing multi-project feature build time by 30%.",
+                "Engineered resilient client-side authentication and state synchronization via Redux Toolkit, providing sub-100ms UI responsiveness across constrained network connections."
+            ],
+            "technologies": [
+                "React",
+                "Vue",
+                "React Native",
+                "Redux Toolkit",
+                "RESTful APIs",
+                "Material UI"
             ]
         },
         {
