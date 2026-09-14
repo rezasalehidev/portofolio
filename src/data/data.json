@@ -76,12 +76,13 @@
             "location": "Tehran, Iran (Remote)",
             "highlights": [
                 "Overhauled enterprise Angular application architecture with lazy-loaded Angular Router modules, Dependency Injection patterns, and standalone/feature boundaries—elevating Core Web Vitals, shrinking initial bundle size by 28%, and lowering bounce rates by 15%.",
-                "Delivered complex domain workflows with Angular Reactive Forms, template-driven form migration paths, and validation pipelines, while coordinating Agile sprints, backlog grooming, and iterative release planning with cross-functional stakeholders.",
+                "Delivered complex domain workflows with Angular Reactive Forms and React feature modules, template-driven form migration paths, and validation pipelines, while coordinating Agile sprints, backlog grooming, and iterative release planning with cross-functional stakeholders.",
                 "Implemented scalable client state and async data flows with RxJS operators, NgRx store/effects, and Angular Signals where appropriate, eliminating redundant HTTP round-trips and lifting checkout conversion by 18%.",
                 "Automated continuous integration and deployment with GitHub Actions and Docker, raising team release velocity and deployment frequency by 50% within Agile delivery cycles."
             ],
             "technologies": [
                 "Angular",
+                "React",
                 "TypeScript",
                 "RxJS",
                 "NgRx",
