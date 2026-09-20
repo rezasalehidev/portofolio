@@ -1,10 +1,10 @@
 {
     "Header": {
         "title": "Reza Salehi",
-        "paragraph": "Full-stack specialist with a strong frontend focus—building polished web and app experiences."
+        "paragraph": "Full-stack specialist with a strong frontend focus—building polished web and app experiences, plus AI-powered product features."
     },
     "About": {
-        "paragraph": "Self-taught full-stack web and mobile developer with {{years}} years of professional experience across product companies and remote teams. Strong frontend skills in React, Vue, and Angular, plus backend delivery with Node.js, NestJS, Django, and Flask. Excellent teamwork, communication, and timeline ownership—passionate about learning and new opportunities.",
+        "paragraph": "Self-taught full-stack web and mobile developer with {{years}} years of professional experience across product companies and remote teams. Strong frontend skills in React, Vue, and Angular, plus backend delivery with Node.js, NestJS, Django, and Flask. Hands-on with AI engineering—RAG, LLM integration, vector databases, AI agents, prompt engineering, LangChain/LangGraph, and embeddings. Excellent teamwork, communication, and timeline ownership—passionate about learning and new opportunities.",
         "careerStartYear": 2017
     },
     "Experience": [
@@ -381,6 +381,48 @@
             "text": "50%",
             "percent": "50",
             "category": "backend"
+        },
+        {
+            "name": "RAG",
+            "text": "85%",
+            "percent": "85",
+            "category": "ai"
+        },
+        {
+            "name": "LLM Integration",
+            "text": "85%",
+            "percent": "85",
+            "category": "ai"
+        },
+        {
+            "name": "Vector Databases",
+            "text": "85%",
+            "percent": "85",
+            "category": "ai"
+        },
+        {
+            "name": "AI Agents",
+            "text": "85%",
+            "percent": "85",
+            "category": "ai"
+        },
+        {
+            "name": "Prompt Engineering",
+            "text": "85%",
+            "percent": "85",
+            "category": "ai"
+        },
+        {
+            "name": "LangChain / LangGraph",
+            "text": "85%",
+            "percent": "85",
+            "category": "ai"
+        },
+        {
+            "name": "Embeddings",
+            "text": "85%",
+            "percent": "85",
+            "category": "ai"
         }
     ],
     "Testimonials": [

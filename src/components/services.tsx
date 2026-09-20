@@ -31,12 +31,28 @@ const FRONTEND_NAMES = new Set([
 
 const MOBILE_NAMES = new Set(["React Native", "Dart", "Flutter"]);
 
+const AI_NAMES = new Set([
+  "RAG",
+  "LLM Integration",
+  "Vector Databases",
+  "AI Agents",
+  "Prompt Engineering",
+  "LangChain / LangGraph",
+  "Embeddings",
+]);
+
 const groupSkills = (skills: ServiceItem[]) => {
   const frontend: ServiceItem[] = [];
   const mobile: ServiceItem[] = [];
   const backend: ServiceItem[] = [];
+  const ai: ServiceItem[] = [];
 
   skills.forEach((skill) => {
+    if (skill.category === "ai" || AI_NAMES.has(skill.name)) {
+      ai.push(skill);
+      return;
+    }
+
     if (skill.category === "mobile" || MOBILE_NAMES.has(skill.name)) {
       mobile.push(skill);
       return;
@@ -55,7 +71,7 @@ const groupSkills = (skills: ServiceItem[]) => {
     backend.push(skill);
   });
 
-  return { frontend, mobile, backend };
+  return { frontend, mobile, backend, ai };
 };
 
 const SkillCard = ({
@@ -104,7 +120,7 @@ const SkillsGroup = ({
 };
 
 export const Services = ({ data }: ServicesProps): JSX.Element => {
-  const { frontend, mobile, backend } = groupSkills(data ?? []);
+  const { frontend, mobile, backend, ai } = groupSkills(data ?? []);
 
   return (
     <div id="services" className="text-center">
@@ -120,6 +136,7 @@ export const Services = ({ data }: ServicesProps): JSX.Element => {
             <SkillsGroup title="Frontend" skills={frontend} />
             <SkillsGroup title="Mobile" skills={mobile} />
             <SkillsGroup title="Backend" skills={backend} />
+            <SkillsGroup title="AI Engineering" skills={ai} />
           </>
         )}
       </div>
