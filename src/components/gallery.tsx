@@ -57,6 +57,11 @@ const projects: ProjectItem[] = [
     title: "Boxy iOS",
     description: "Merchant delivery app",
   },
+  {
+    href: "https://angular-jira.vercel.app/dashboard",
+    title: "Angular Jira",
+    description: "Issue tracking dashboard",
+  },
 ];
 
 export const Gallery = (): JSX.Element => {
