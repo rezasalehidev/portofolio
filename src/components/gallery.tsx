@@ -60,17 +60,17 @@ const projects: ProjectItem[] = [
   {
     href: "https://fjalla.net/",
     title: "Fjalla",
-    description: "Fan platform",
+    description: "Music and video streaming platform",
   },
   {
     href: "https://apps.apple.com/ca/app/fjalla/id6670492390",
     title: "Fjalla iOS",
-    description: "Fan mobile app",
+    description: "Music and video streaming app",
   },
   {
     href: "https://play.google.com/store/apps/details?id=fjalla.net.fjalla_fan_mobile&hl=en",
     title: "Fjalla Android",
-    description: "Fan mobile app",
+    description: "Music and video streaming app",
   },
   {
     href: "https://angular-jira.vercel.app/dashboard",
