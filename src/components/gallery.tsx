@@ -58,6 +58,21 @@ const projects: ProjectItem[] = [
     description: "Merchant delivery app",
   },
   {
+    href: "https://fjalla.net/",
+    title: "Fjalla",
+    description: "Fan platform",
+  },
+  {
+    href: "https://apps.apple.com/ca/app/fjalla/id6670492390",
+    title: "Fjalla iOS",
+    description: "Fan mobile app",
+  },
+  {
+    href: "https://play.google.com/store/apps/details?id=fjalla.net.fjalla_fan_mobile&hl=en",
+    title: "Fjalla Android",
+    description: "Fan mobile app",
+  },
+  {
     href: "https://angular-jira.vercel.app/dashboard",
     title: "Angular Jira",
     description: "Issue tracking dashboard",
