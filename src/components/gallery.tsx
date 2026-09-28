@@ -158,6 +158,13 @@ const projects: ProjectItem[] = [
     category: "mobile",
     tags: ["Android", "Education"],
   },
+  {
+    href: "https://t.me/MyChessPlayBot",
+    title: "MyChessPlayBot",
+    description: "Telegram bot for playing chess with friends and opponents",
+    category: "bots",
+    tags: ["Telegram", "Chess"],
+  },
 ];
 
 type FilterKey = "all" | ProjectCategory;
@@ -167,12 +174,14 @@ const FILTERS: { key: FilterKey; label: string }[] = [
   { key: "web", label: "Web" },
   { key: "mobile", label: "Mobile" },
   { key: "dashboard", label: "Dashboards" },
+  { key: "bots", label: "Telegram Bots" },
 ];
 
 const CATEGORY_LABEL: Record<ProjectCategory, string> = {
   web: "Web",
   mobile: "Mobile",
   dashboard: "Dashboard",
+  bots: "Telegram Bot",
 };
 
 const getPreviewHost = (href: string): string => {
@@ -240,6 +249,32 @@ const ProjectPreview = ({
     );
   }
 
+  if (project.category === "bots") {
+    return (
+      <div className="portfolio-preview portfolio-preview--bot" aria-hidden="true">
+        <div className="portfolio-preview-chat">
+          <div className="portfolio-preview-chat-header">
+            <span className="portfolio-preview-icon">
+              <i className="fa fa-paper-plane" />
+            </span>
+            <div>
+              <span className="portfolio-preview-name">{project.title}</span>
+              <span className="portfolio-preview-meta">@{project.title}</span>
+            </div>
+          </div>
+          <div className="portfolio-preview-chat-body">
+            <span className="portfolio-preview-bubble portfolio-preview-bubble--bot">
+              Ready to play chess?
+            </span>
+            <span className="portfolio-preview-bubble portfolio-preview-bubble--user">
+              /start
+            </span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="portfolio-preview portfolio-preview--browser" aria-hidden="true">
       <div className="portfolio-preview-window">
@@ -278,7 +313,10 @@ export const Gallery = (): JSX.Element => {
         <div className="section-title" data-aos="fade-up">
           <h2>Projects</h2>
           <p className="portfolio-note" data-aos="fade-up" data-aos-delay="100">
-            Selected product work across web apps, mobile clients, and dashboards.
+            Selected product work across web apps, mobile clients, dashboards, and
+            Telegram bots.
+          </p>
+          <p className="portfolio-note portfolio-note--vpn" data-aos="fade-up" data-aos-delay="150">
             Please turn on your VPN before opening some live demos.
           </p>
         </div>

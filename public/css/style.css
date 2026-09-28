@@ -1125,6 +1125,12 @@ header .intro-text {
 	line-height: 1.6;
 }
 
+.portfolio-note--vpn {
+	margin-top: 8px;
+	font-weight: 600;
+	color: #5570ef;
+}
+
 .portfolio-filters {
 	display: flex;
 	flex-wrap: wrap;
@@ -1225,6 +1231,12 @@ header .intro-text {
 	background:
 		radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.24), transparent 42%),
 		linear-gradient(135deg, #4b6cb7 0%, #608dfd 50%, #182848 100%);
+}
+
+.portfolio-card-media--bots {
+	background:
+		radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.28), transparent 42%),
+		linear-gradient(135deg, #2aabee 0%, #229ed9 48%, #1b7fb8 100%);
 }
 
 .portfolio-card-badge {
@@ -1463,6 +1475,89 @@ header .intro-text {
 .portfolio-preview-phone .portfolio-preview-icon {
 	background: rgba(255, 255, 255, 0.12);
 	box-shadow: none;
+}
+
+.portfolio-preview-chat {
+	width: min(100%, 230px);
+	background: rgba(255, 255, 255, 0.96);
+	border-radius: 16px 16px 0 0;
+	box-shadow: 0 14px 30px rgba(24, 40, 72, 0.22);
+	overflow: hidden;
+	transform: translateY(10px);
+	transition: transform 0.25s ease;
+}
+
+.portfolio-card-link:hover .portfolio-preview-chat,
+.portfolio-card-link:focus .portfolio-preview-chat {
+	transform: translateY(4px);
+}
+
+.portfolio-preview-chat-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 12px 10px;
+	background: #229ed9;
+	text-align: left;
+}
+
+.portfolio-preview-chat-header .portfolio-preview-icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: none;
+	font-size: 13px;
+}
+
+.portfolio-preview-chat-header .portfolio-preview-name,
+.portfolio-preview-chat-header .portfolio-preview-meta {
+	display: block;
+	color: #fff;
+}
+
+.portfolio-preview-chat-header .portfolio-preview-name {
+	font-size: 13px;
+}
+
+.portfolio-preview-chat-header .portfolio-preview-meta {
+	opacity: 0.85;
+	font-size: 10px;
+}
+
+.portfolio-preview-chat-body {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	min-height: 88px;
+	padding: 12px;
+	background:
+		linear-gradient(180deg, rgba(34, 158, 217, 0.08), transparent 40%),
+		#eef6fb;
+}
+
+.portfolio-preview-bubble {
+	max-width: 82%;
+	padding: 7px 10px;
+	border-radius: 12px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+.portfolio-preview-bubble--bot {
+	align-self: flex-start;
+	background: #fff;
+	color: #24324d;
+	border-bottom-left-radius: 4px;
+	box-shadow: 0 4px 10px rgba(24, 40, 72, 0.06);
+}
+
+.portfolio-preview-bubble--user {
+	align-self: flex-end;
+	background: #229ed9;
+	color: #fff;
+	border-bottom-right-radius: 4px;
 }
 
 .portfolio-card-body {

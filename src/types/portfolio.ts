@@ -69,7 +69,7 @@ export interface LandingPageData {
   Team?: TeamMember[];
 }
 
-export type ProjectCategory = "web" | "mobile" | "dashboard";
+export type ProjectCategory = "web" | "mobile" | "dashboard" | "bots";
 
 export interface ProjectItem {
   href: string;
