@@ -77,6 +77,17 @@ const projects: ProjectItem[] = [
     title: "Angular Jira",
     description: "Issue tracking dashboard",
   },
+  {
+    href: "https://www.gbtmarket.com",
+    title: "GBT Market",
+    description:
+      "Trading platform providing fast, secure access to global financial markets",
+  },
+  {
+    href: "https://propertyflow-neon.vercel.app/",
+    title: "PropertyFlow",
+    description: "Real estate CRM dashboard",
+  },
 ];
 
 export const Gallery = (): JSX.Element => {
