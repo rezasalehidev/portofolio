@@ -311,9 +311,15 @@
             "category": "frontend"
         },
         {
-            "name": "Angular Material / Vuetify",
+            "name": "Angular Material",
             "text": "95%",
             "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "Vuetify",
+            "text": "90%",
+            "percent": "90",
             "category": "frontend"
         },
         {
@@ -372,15 +378,15 @@
         },
         {
             "name": "Docker",
-            "text": "90%",
-            "percent": "90",
-            "category": "backend"
+            "text": "80%",
+            "percent": "80",
+            "category": "devops"
         },
         {
             "name": "Kubernetes",
-            "text": "50%",
-            "percent": "50",
-            "category": "backend"
+            "text": "65%",
+            "percent": "65",
+            "category": "devops"
         },
         {
             "name": "RAG",
@@ -396,8 +402,8 @@
         },
         {
             "name": "Vector Databases",
-            "text": "85%",
-            "percent": "85",
+            "text": "65%",
+            "percent": "65",
             "category": "ai"
         },
         {
@@ -414,14 +420,14 @@
         },
         {
             "name": "LangChain / LangGraph",
-            "text": "85%",
-            "percent": "85",
+            "text": "65%",
+            "percent": "65",
             "category": "ai"
         },
         {
             "name": "Embeddings",
-            "text": "85%",
-            "percent": "85",
+            "text": "65%",
+            "percent": "65",
             "category": "ai"
         }
     ],

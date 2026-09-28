@@ -29,7 +29,7 @@ export interface ServiceItem {
   name: string;
   text: string;
   percent: string | number;
-  category?: "frontend" | "mobile" | "backend" | "ai";
+  category?: "frontend" | "mobile" | "backend" | "devops" | "ai";
 }
 
 export interface ContactData {
@@ -69,8 +69,12 @@ export interface LandingPageData {
   Team?: TeamMember[];
 }
 
+export type ProjectCategory = "web" | "mobile" | "dashboard";
+
 export interface ProjectItem {
   href: string;
   title: string;
   description?: string;
+  category: ProjectCategory;
+  tags?: string[];
 }
