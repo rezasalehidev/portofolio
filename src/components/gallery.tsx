@@ -18,13 +18,6 @@ const projects: ProjectItem[] = [
     tags: ["CRM", "Real Estate"],
   },
   {
-    href: "https://realestatevelora.vercel.app/",
-    title: "RealEstate Velora",
-    description: "Buy, sell, and rent property marketplace",
-    category: "web",
-    tags: ["Real Estate", "Marketplace"],
-  },
-  {
     href: "https://www.agileful.com",
     title: "Agileful",
     description:
@@ -171,6 +164,13 @@ const projects: ProjectItem[] = [
     description: "Telegram bot for playing chess with friends and opponents",
     category: "bots",
     tags: ["Telegram", "Chess"],
+  },
+  {
+    href: "https://realestatevelora.vercel.app/",
+    title: "RealEstate Velora",
+    description: "Buy, sell, and rent property marketplace",
+    category: "web",
+    tags: ["Real Estate", "Marketplace"],
   },
 ];
 
