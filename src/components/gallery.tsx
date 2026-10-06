@@ -3,6 +3,13 @@ import type { ProjectCategory, ProjectItem } from "../types/portfolio";
 
 const projects: ProjectItem[] = [
   {
+    href: "https://www.tryboxy.com/en/",
+    title: "Boxy",
+    description: "Shipping and delivery platform",
+    category: "web",
+    tags: ["Logistics"],
+  },
+  {
     href: "https://www.gbtmarket.com",
     title: "GBT Market",
     description:
@@ -73,13 +80,6 @@ const projects: ProjectItem[] = [
     description: "Ordering and fulfillment platform",
     category: "web",
     tags: ["Ordering"],
-  },
-  {
-    href: "https://www.tryboxy.com/en/",
-    title: "Boxy",
-    description: "Shipping and delivery platform",
-    category: "web",
-    tags: ["Logistics"],
   },
   {
     href: "https://fjalla.net/",
