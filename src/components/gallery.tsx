@@ -96,6 +96,14 @@ const projects: ProjectItem[] = [
     tags: ["Angular", "Productivity"],
   },
   {
+    href: "https://cafebazaar.ir/developer/347168781117",
+    title: "Cafe Bazaar Apps",
+    description:
+      "Android apps published on Cafe Bazaar by Iran Zamin programming group",
+    category: "mobile",
+    tags: ["Android", "Cafe Bazaar"],
+  },
+  {
     href: "https://play.google.com/store/apps/details?id=com.tryboxy.merchant&hl=en",
     title: "Boxy Android",
     description: "Merchant delivery app for Android",
@@ -350,6 +358,32 @@ export const Gallery = (): JSX.Element => {
             </button>
           ))}
         </div>
+
+        {(filter === "all" || filter === "mobile") && (
+          <a
+            className="portfolio-bazaar-banner"
+            href="https://cafebazaar.ir/developer/347168781117"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-aos="fade-up"
+            data-aos-delay="180"
+          >
+            <span className="portfolio-bazaar-icon" aria-hidden="true">
+              <i className="fa fa-android" />
+            </span>
+            <span className="portfolio-bazaar-copy">
+              <strong>Cafe Bazaar developer profile</strong>
+              <em>
+                Browse my published Android apps on Cafe Bazaar — Iran Zamin
+                programming group
+              </em>
+            </span>
+            <span className="portfolio-bazaar-cta">
+              View apps
+              <span aria-hidden="true"> →</span>
+            </span>
+          </a>
+        )}
 
         <div className="portfolio-grid">
           {visibleProjects.map((project, index) => (
