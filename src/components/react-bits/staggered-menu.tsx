@@ -457,6 +457,12 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                     href={it.link}
                     aria-label={it.ariaLabel}
                     data-index={idx + 1}
+                    target={it.link.startsWith("http") ? "_blank" : undefined}
+                    rel={
+                      it.link.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     onClick={closeMenu}
                   >
                     <span className="sm-panel-itemLabel">{it.label}</span>

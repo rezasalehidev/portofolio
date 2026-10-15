@@ -2433,6 +2433,46 @@ header .intro-text {
 	gap: 24px;
 }
 
+.nav-desktop-links {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	min-width: 0;
+}
+
+.nav-bazaar-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 9px 14px;
+	border-radius: 999px;
+	border: 1px solid #d9e2f2;
+	background: #fff;
+	color: #445;
+	font-family: "Raleway", sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	white-space: nowrap;
+	text-decoration: none;
+	box-shadow: 0 6px 14px rgba(31, 56, 110, 0.06);
+	transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+		box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.nav-bazaar-link i {
+	color: #3ddc84;
+	font-size: 15px;
+}
+
+.nav-bazaar-link:hover,
+.nav-bazaar-link:focus {
+	border-color: #608dfd;
+	color: #608dfd;
+	box-shadow: 0 10px 18px rgba(99, 114, 255, 0.14);
+	transform: translateY(-1px);
+	outline: none;
+}
+
 .portfolio-gooey-nav {
 	overflow: hidden;
 }
