@@ -174,6 +174,14 @@ const projects: ProjectItem[] = [
     tags: ["Telegram", "Chess"],
   },
   {
+    href: "https://car-simulate.vercel.app/",
+    title: "RADIN Atelier",
+    description:
+      "Luxury automotive 3D studio for configuring supercars in real time",
+    category: "web",
+    tags: ["Automotive", "3D"],
+  },
+  {
     href: "https://realestatevelora.vercel.app/",
     title: "RealEstate Velora",
     description: "Buy, sell, and rent property marketplace",
