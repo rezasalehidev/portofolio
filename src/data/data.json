@@ -335,6 +335,12 @@
             "category": "mobile"
         },
         {
+            "name": "Kotlin",
+            "text": "85%",
+            "percent": "85",
+            "category": "mobile"
+        },
+        {
             "name": "Nodejs",
             "text": "80%",
             "percent": "80",
@@ -359,9 +365,21 @@
             "category": "backend"
         },
         {
-            "name": "RestFull / Graphql / grpc",
+            "name": "RESTful APIs",
             "text": "90%",
             "percent": "90",
+            "category": "backend"
+        },
+        {
+            "name": "GraphQL",
+            "text": "90%",
+            "percent": "90",
+            "category": "backend"
+        },
+        {
+            "name": "gRPC",
+            "text": "85%",
+            "percent": "85",
             "category": "backend"
         },
         {

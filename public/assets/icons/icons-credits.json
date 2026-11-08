@@ -108,6 +108,18 @@
     "markUrl": "https://graphql.org/"
   },
   {
+    "file": "grpc.svg",
+    "icon": "logos:grpc",
+    "name": "gRPC",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://grpc.io/"
+  },
+  {
     "file": "js.svg",
     "icon": "file:file-type-js-official",
     "name": "JavaScript",
@@ -213,6 +225,18 @@
     "url": "https://github.com/gilbarbara/logos",
     "trademark": true,
     "markUrl": "https://nuxtjs.org/"
+  },
+  {
+    "file": "openapi.svg",
+    "icon": "logos:openapi-icon",
+    "name": "OpenAPI",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.openapis.org/"
   },
   {
     "file": "postgres.svg",

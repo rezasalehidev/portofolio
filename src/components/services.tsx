@@ -82,7 +82,7 @@ const FRONTEND_SET = new Set([
   "Vuetify",
 ]);
 
-const MOBILE_SET = new Set(["React Native", "Dart", "Flutter"]);
+const MOBILE_SET = new Set(["React Native", "Dart", "Flutter", "Kotlin"]);
 const DEVOPS_SET = new Set(["Docker", "Kubernetes", "Linux", "Network", "Networking"]);
 const AI_SET = new Set([
   "RAG",
@@ -116,11 +116,14 @@ const ICON_MAP: Record<string, string> = {
   Vuetify: "assets/icons/vue.svg",
   Dart: "assets/icons/dart.svg",
   Flutter: "assets/icons/flutter.svg",
+  Kotlin: "assets/icons/kotlin.svg",
   Nodejs: "assets/icons/nodejs.svg",
   NestJS: "assets/icons/nestjs.svg",
   Django: "assets/icons/django.svg",
   Flask: "assets/icons/python.svg",
-  "RestFull / Graphql / grpc": "assets/icons/graphql.svg",
+  "RESTful APIs": "assets/icons/openapi.svg",
+  GraphQL: "assets/icons/graphql.svg",
+  gRPC: "assets/icons/grpc.svg",
   PostgreSQL: "assets/icons/postgres.svg",
   MongoDB: "assets/icons/mongodb.svg",
   Docker: "assets/icons/docker.svg",
