@@ -299,7 +299,13 @@
             "category": "frontend"
         },
         {
-            "name": "ReactQuery / RTK-query",
+            "name": "React Query",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "RTK Query",
             "text": "95%",
             "percent": "95",
             "category": "frontend"

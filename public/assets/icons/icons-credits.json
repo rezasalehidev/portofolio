@@ -12,6 +12,18 @@
     "markUrl": "https://angular.io/"
   },
   {
+    "file": "anthropic.svg",
+    "icon": "logos:anthropic-icon",
+    "name": "Anthropic",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.anthropic.com/"
+  },
+  {
     "file": "apple.svg",
     "icon": "logos:apple",
     "name": "Apple",
@@ -84,6 +96,18 @@
     "markUrl": "https://flutter.dev"
   },
   {
+    "file": "gemini.svg",
+    "icon": "logos:google-gemini-icon",
+    "name": "Gemini",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://deepmind.google/technologies/gemini/"
+  },
+  {
     "file": "git.svg",
     "icon": "logos:git-icon",
     "name": "Git",
@@ -118,6 +142,18 @@
     "url": "https://github.com/gilbarbara/logos",
     "trademark": true,
     "markUrl": "https://grpc.io/"
+  },
+  {
+    "file": "hugging-face.svg",
+    "icon": "logos:hugging-face-icon",
+    "name": "Hugging Face",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://huggingface.co/"
   },
   {
     "file": "js.svg",
@@ -251,6 +287,30 @@
     "markUrl": "https://nuxtjs.org/"
   },
   {
+    "file": "ollama.svg",
+    "icon": "logos:ollama",
+    "name": "Ollama",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://ollama.com"
+  },
+  {
+    "file": "openai.svg",
+    "icon": "logos:openai-icon",
+    "name": "OpenAI",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://openai.com/"
+  },
+  {
     "file": "openapi.svg",
     "icon": "logos:openapi-icon",
     "name": "OpenAPI",
@@ -261,6 +321,18 @@
     "url": "https://github.com/gilbarbara/logos",
     "trademark": true,
     "markUrl": "https://www.openapis.org/"
+  },
+  {
+    "file": "pinecone.svg",
+    "icon": "logos:pinecone-icon",
+    "name": "Pinecone",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.pinecone.io/"
   },
   {
     "file": "postgres.svg",
@@ -275,6 +347,18 @@
     "markUrl": "https://www.postgresql.org/"
   },
   {
+    "file": "pwa.svg",
+    "icon": "logos:pwa",
+    "name": "Pwa",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://web.dev/progressive-web-apps/"
+  },
+  {
     "file": "python.svg",
     "icon": "logos:python",
     "name": "Python",
@@ -285,6 +369,30 @@
     "url": "https://github.com/gilbarbara/logos",
     "trademark": true,
     "markUrl": "https://www.python.org/"
+  },
+  {
+    "file": "react-query-icon.svg",
+    "icon": "logos:react-query-icon",
+    "name": "React Query",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://react-query.tanstack.com/"
+  },
+  {
+    "file": "react-query.svg",
+    "icon": "logos:react-query",
+    "name": "React Query",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://react-query.tanstack.com/"
   },
   {
     "file": "react.svg",
