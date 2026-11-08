@@ -378,14 +378,26 @@
         },
         {
             "name": "Docker",
+            "text": "85%",
+            "percent": "85",
+            "category": "devops"
+        },
+        {
+            "name": "Kubernetes",
             "text": "80%",
             "percent": "80",
             "category": "devops"
         },
         {
-            "name": "Kubernetes",
-            "text": "65%",
-            "percent": "65",
+            "name": "Linux",
+            "text": "90%",
+            "percent": "90",
+            "category": "devops"
+        },
+        {
+            "name": "Network",
+            "text": "85%",
+            "percent": "85",
             "category": "devops"
         },
         {

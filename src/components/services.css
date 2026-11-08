@@ -1,0 +1,524 @@
+/* ==========================================================================
+   taste-skill Redesign: Compact Segmented Skills Console
+   Scoped exclusively to #services
+   ========================================================================== */
+
+#services {
+  padding: 80px 0 96px;
+  background:
+    radial-gradient(circle at 14% 15%, rgba(92, 169, 251, 0.12), transparent 32%),
+    radial-gradient(circle at 86% 12%, rgba(99, 114, 255, 0.10), transparent 28%),
+    linear-gradient(180deg, #f4f7fc 0%, #ffffff 50%, #f7f9fd 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#services .container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section Header */
+.taste-skills-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 28px;
+}
+
+.taste-skills-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #3f78c7;
+  background: rgba(92, 169, 251, 0.12);
+  border: 1px solid rgba(92, 169, 251, 0.25);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.taste-skills-kicker-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #3f78c7;
+  box-shadow: 0 0 6px rgba(63, 120, 199, 0.6);
+}
+
+.taste-skills-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1e2638;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  text-transform: none !important;
+}
+
+.taste-skills-subtitle {
+  font-size: 15px;
+  color: #61708a;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Stats Summary Strip */
+.taste-skills-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 12px 24px;
+  margin: 0 auto 28px;
+  max-width: 620px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(220, 229, 242, 0.9);
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(31, 56, 110, 0.03);
+}
+
+.taste-skills-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.taste-skills-stat-val {
+  font-size: 20px;
+  font-weight: 800;
+  color: #2b59c3;
+  letter-spacing: -0.02em;
+}
+
+.taste-skills-stat-lbl {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #55657e;
+  line-height: 1.2;
+}
+
+.taste-skills-stat-divider {
+  width: 1px;
+  height: 20px;
+  background-color: #e2e8f4;
+}
+
+/* Navigation Segmented Tabs Bar */
+.taste-skills-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.taste-skills-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  background: rgba(235, 241, 250, 0.65);
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid #dce4f2;
+}
+
+.taste-skills-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 36px;
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #55657e;
+  cursor: pointer;
+  transition: all 0.16s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.taste-skills-tab-btn:hover {
+  color: #1e2638;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.taste-skills-tab-btn.is-active {
+  background: #ffffff;
+  color: #244eb5;
+  border-color: #d1def0;
+  box-shadow: 0 2px 8px rgba(36, 78, 181, 0.12);
+}
+
+.taste-skills-tab-glyph {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.taste-skills-tab-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 5px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #61708a;
+}
+
+.taste-skills-tab-btn.is-active .taste-skills-tab-count {
+  background: rgba(36, 78, 181, 0.10);
+  color: #244eb5;
+}
+
+/* Quick Search Input */
+.taste-skills-search-wrap {
+  position: relative;
+  min-width: 220px;
+  flex-shrink: 0;
+}
+
+.taste-skills-search-input {
+  width: 100%;
+  height: 36px;
+  padding: 0 14px 0 34px;
+  font-size: 12.5px;
+  border-radius: 999px;
+  border: 1px solid #dce4f2;
+  background: #ffffff;
+  color: #1e2638;
+  outline: none;
+  transition: all 0.16s ease;
+}
+
+.taste-skills-search-input:focus {
+  border-color: #3f78c7;
+  box-shadow: 0 0 0 3px rgba(63, 120, 199, 0.14);
+}
+
+.taste-skills-search-icon {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8c9cb5;
+  font-size: 13px;
+  pointer-events: none;
+}
+
+/* Main Display Console Card */
+.taste-skills-console {
+  background: #ffffff;
+  border: 1px solid #e1e8f5;
+  border-radius: 18px;
+  padding: 22px 24px 24px;
+  box-shadow: 0 8px 28px rgba(31, 56, 110, 0.04);
+  transition: all 0.2s ease;
+}
+
+.taste-skills-console:hover {
+  border-color: #c8daf8;
+  box-shadow: 0 12px 34px rgba(31, 56, 110, 0.07);
+}
+
+/* Balanced 2-Column Bento Layout for View All */
+.taste-skills-bento-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.taste-skills-bento-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Console Header Bar */
+.taste-skills-console-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #edf2f9;
+}
+
+.taste-skills-console-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.taste-skills-console-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #eef4ff 0%, #e4eeff 100%);
+  border: 1px solid #d9e6fc;
+  color: #345fcf;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.taste-skills-console-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a2233;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.taste-skills-console-blurb {
+  font-size: 12.5px;
+  color: #697891;
+  margin: 2px 0 0;
+}
+
+.taste-skills-console-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #345fcf;
+  background: #f0f5ff;
+  border: 1px solid #dce8ff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+/* Compact Grid of Skill Tiles */
+.taste-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.taste-skill-tile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: #f8fafe;
+  border: 1px solid #e7edf7;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.16s ease,
+              border-color 0.16s ease,
+              box-shadow 0.16s ease;
+  user-select: none;
+}
+
+.taste-skill-tile:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  border-color: #b3cff8;
+  box-shadow: 0 5px 15px rgba(63, 120, 199, 0.12);
+}
+
+/* Icon Tile (.ic-tile) */
+.taste-skill-icon-tile {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #dce4f2;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  padding: 4px;
+}
+
+.taste-skill-icon-tile img {
+  width: 100%;
+  height: 100%;
+  max-width: 22px;
+  max-height: 22px;
+  object-fit: contain;
+  display: block;
+}
+
+.taste-skill-icon-tile svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Skill Info */
+.taste-skill-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.taste-skill-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.taste-skill-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e2638;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -0.01em;
+}
+
+.taste-skill-pill {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1.5px 5px;
+  border-radius: 5px;
+  line-height: 1.2;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.taste-skill-pill--expert {
+  background: rgba(79, 99, 232, 0.12);
+  color: #3b50df;
+  border: 1px solid rgba(79, 99, 232, 0.22);
+}
+
+.taste-skill-pill--advanced {
+  background: rgba(63, 120, 199, 0.10);
+  color: #2b65b1;
+  border: 1px solid rgba(63, 120, 199, 0.20);
+}
+
+.taste-skill-pill--intermediate {
+  background: rgba(120, 135, 158, 0.10);
+  color: #55667e;
+  border: 1px solid rgba(120, 135, 158, 0.20);
+}
+
+.taste-skill-bar-wrap {
+  width: 100%;
+  height: 2.5px;
+  background: #e7ecf4;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.taste-skill-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #5ca9fb 0%, #4f63e8 100%);
+}
+
+.taste-skill-bar-fill--advanced {
+  background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+.taste-skill-bar-fill--intermediate {
+  background: #94a3b8;
+}
+
+/* Empty search state */
+.taste-skills-empty {
+  text-align: center;
+  padding: 40px 20px;
+  background: #ffffff;
+  border: 1px dashed #dce4f2;
+  border-radius: 14px;
+  color: #697891;
+  margin-top: 10px;
+}
+
+.taste-skills-empty-btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 12.5px;
+  color: #3f78c7;
+  border: 1px solid #b8cff8;
+  border-radius: 999px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  #services {
+    padding: 64px 0 72px;
+  }
+
+  .taste-skills-nav-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .taste-skills-tabs {
+    overflow-x: auto;
+    padding-bottom: 6px;
+    border-radius: 14px;
+  }
+
+  .taste-skills-bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .taste-skills-search-wrap {
+    width: 100%;
+  }
+
+  .taste-skills-stats {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 639px) {
+  .taste-skills-title {
+    font-size: 26px;
+  }
+
+  .taste-skills-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 18px;
+    gap: 10px;
+  }
+
+  .taste-skills-stat-divider {
+    display: none;
+  }
+
+  .taste-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .taste-skills-console-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
