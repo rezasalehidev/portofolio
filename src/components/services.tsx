@@ -90,7 +90,8 @@ const AI_SET = new Set([
   "Vector Databases",
   "AI Agents",
   "Prompt Engineering",
-  "LangChain / LangGraph",
+  "LangChain",
+  "LangGraph",
   "Embeddings",
 ]);
 
@@ -131,7 +132,8 @@ const ICON_MAP: Record<string, string> = {
   Linux: "assets/icons/linux-tux.svg",
   Network: "assets/icons/network.svg",
   Networking: "assets/icons/network.svg",
-  "LangChain / LangGraph": "assets/icons/python.svg",
+  LangChain: "assets/icons/langchain.svg",
+  LangGraph: "assets/icons/langgraph.svg",
 };
 
 const resolveCategory = (name: string, rawCat?: string): SkillCategory => {
@@ -205,7 +207,20 @@ const CategoryCard = ({
 
       <ul className="taste-skills-grid">
         {items.map((skill) => (
-          <li key={skill.name} className="taste-skill-tile" title={`${skill.name} (${skill.level})`}>
+          <li
+            key={skill.name}
+            className="taste-skill-tile"
+            tabIndex={0}
+            title={`${skill.name} (${skill.level})`}
+          >
+            {/* Sleek Tooltip */}
+            <div className="taste-skill-tooltip" role="tooltip" aria-hidden="true">
+              <span className="taste-skill-tooltip-name">{skill.name}</span>
+              <span className="taste-skill-tooltip-meta">
+                {skill.level} ({skill.percent || "90"}%)
+              </span>
+            </div>
+
             <div className="taste-skill-icon-tile" aria-hidden="true">
               {skill.iconSrc ? (
                 <img src={skill.iconSrc} alt="" loading="lazy" />

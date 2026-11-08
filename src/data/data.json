@@ -449,9 +449,15 @@
             "category": "ai"
         },
         {
-            "name": "LangChain / LangGraph",
-            "text": "65%",
-            "percent": "65",
+            "name": "LangChain",
+            "text": "85%",
+            "percent": "85",
+            "category": "ai"
+        },
+        {
+            "name": "LangGraph",
+            "text": "85%",
+            "percent": "85",
             "category": "ai"
         },
         {
