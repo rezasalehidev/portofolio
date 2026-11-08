@@ -63,25 +63,64 @@ const FRONTEND_SET = new Set([
   "Typescript",
   "React",
   "Next.js",
-  "Vue",
-  "Angular",
-  "RxJS",
-  "NgRx",
-  "Angular Signals",
-  "Reactive Forms",
-  "Angular Router / DI",
-  "Nuxt",
-  "Pwa",
-  "FlexBox / CssGrid",
-  "Bootstrap",
-  "Tailwind css",
-  "Material ui / Ant",
   "React Query",
   "RTK Query",
-  "MicroFrontend",
-  "Angular Material",
+  "Material UI",
+  "Ant Design",
+  "Vue",
+  "Nuxt",
   "Vuetify",
+  "Angular",
+  "Angular Material",
+  "Angular Router / DI",
+  "Angular Signals",
+  "Reactive Forms",
+  "RxJS",
+  "NgRx",
+  "Tailwind css",
+  "Bootstrap",
+  "Flexbox",
+  "CSS Grid",
+  "MicroFrontend",
+  "Pwa",
 ]);
+
+// Explicit ecosystem grouping order for Frontend
+const FRONTEND_ORDER: Record<string, number> = {
+  // Core Languages
+  Javascript: 1,
+  Typescript: 2,
+
+  // React Ecosystem
+  React: 10,
+  "Next.js": 11,
+  "React Query": 12,
+  "RTK Query": 13,
+  "Material UI": 14,
+  "Ant Design": 15,
+
+  // Vue Ecosystem
+  Vue: 20,
+  Nuxt: 21,
+  Vuetify: 22,
+
+  // Angular Ecosystem
+  Angular: 30,
+  "Angular Material": 31,
+  "Angular Router / DI": 32,
+  "Angular Signals": 33,
+  "Reactive Forms": 34,
+  RxJS: 35,
+  NgRx: 36,
+
+  // Styling & Web Architecture
+  "Tailwind css": 40,
+  Bootstrap: 41,
+  Flexbox: 42,
+  "CSS Grid": 43,
+  MicroFrontend: 44,
+  Pwa: 45,
+};
 
 const MOBILE_SET = new Set(["React Native", "Dart", "Flutter", "Kotlin"]);
 const DEVOPS_SET = new Set(["Docker", "Kubernetes", "Linux", "Network", "Networking"]);
@@ -111,10 +150,12 @@ const ICON_MAP: Record<string, string> = {
   "Angular Router / DI": "assets/icons/angular.svg",
   Nuxt: "assets/icons/nuxt.svg",
   Pwa: "assets/icons/pwa.svg",
-  "FlexBox / CssGrid": "assets/icons/cssgrid.svg",
   Bootstrap: "assets/icons/bootstrap.svg",
   "Tailwind css": "assets/icons/tailwindcss.svg",
-  "Material ui / Ant": "assets/icons/react.svg",
+  Flexbox: "assets/icons/flexbox.svg",
+  "CSS Grid": "assets/icons/cssgrid.svg",
+  "Material UI": "assets/icons/material-ui.svg",
+  "Ant Design": "assets/icons/ant-design.svg",
   "React Query": "assets/icons/react-query-icon.svg",
   "RTK Query": "assets/icons/redux.svg",
   MicroFrontend: "assets/icons/microfrontend.svg",
@@ -127,6 +168,10 @@ const ICON_MAP: Record<string, string> = {
   NestJS: "assets/icons/nestjs.svg",
   Django: "assets/icons/django.svg",
   Flask: "assets/icons/python.svg",
+  Microservices: "assets/icons/microservices.svg",
+  Microservice: "assets/icons/microservices.svg",
+  RabbitMQ: "assets/icons/rabbitmq.svg",
+  "Rabbit MQ": "assets/icons/rabbitmq.svg",
   "RESTful APIs": "assets/icons/openapi.svg",
   GraphQL: "assets/icons/graphql.svg",
   gRPC: "assets/icons/grpc.svg",
@@ -304,7 +349,10 @@ export const Services = ({ data }: ServicesProps): JSX.Element => {
 
   // Group items by category for rendering
   const frontendItems = useMemo(
-    () => displayedItems.filter((s) => s.category === "frontend"),
+    () =>
+      displayedItems
+        .filter((s) => s.category === "frontend")
+        .sort((a, b) => (FRONTEND_ORDER[a.name] ?? 999) - (FRONTEND_ORDER[b.name] ?? 999)),
     [displayedItems]
   );
   const mobileItems = useMemo(
@@ -324,6 +372,41 @@ export const Services = ({ data }: ServicesProps): JSX.Element => {
     [displayedItems]
   );
 
+  // Dynamic stats calculation linked directly to data and current filter
+  const totalSkillsCount = enrichedSkills.length;
+  const totalDomainsCount = useMemo(() => {
+    return new Set(enrichedSkills.map((s) => s.category)).size;
+  }, [enrichedSkills]);
+
+  const yearsOfExperience = useMemo(() => {
+    return Math.max(1, new Date().getFullYear() - 2017);
+  }, []);
+
+  const activeSkillsCount = displayedItems.length;
+  const activeDomainsCount = useMemo(() => {
+    return new Set(displayedItems.map((s) => s.category)).size;
+  }, [displayedItems]);
+
+  const currentTabMeta = useMemo(() => {
+    if (isSearching) {
+      return {
+        skillsLabel: activeSkillsCount === 1 ? "Matching Technology" : "Matching Technologies",
+        domainsLabel: activeDomainsCount === 1 ? "Active Domain" : "Specialized Domains",
+      };
+    }
+    if (activeTab === "all") {
+      return {
+        skillsLabel: "Production Technologies",
+        domainsLabel: "Specialized Domains",
+      };
+    }
+    const tabObj = TABS.find((t) => t.key === activeTab);
+    return {
+      skillsLabel: `${tabObj ? tabObj.label : ""} Technologies`,
+      domainsLabel: "Specialized Domain",
+    };
+  }, [isSearching, activeTab, activeSkillsCount, activeDomainsCount]);
+
   return (
     <div id="services">
       <div className="container">
@@ -339,20 +422,28 @@ export const Services = ({ data }: ServicesProps): JSX.Element => {
           </p>
         </div>
 
-        {/* Stats Strip */}
+        {/* Dynamic Stats Strip */}
         <div className="taste-skills-stats" data-aos="fade-up" data-aos-delay="50">
           <div className="taste-skills-stat-item">
-            <span className="taste-skills-stat-val">40+</span>
-            <span className="taste-skills-stat-lbl">Production Technologies</span>
+            <span className="taste-skills-stat-val">
+              {activeTab === "all" && !isSearching
+                ? `${totalSkillsCount}+`
+                : activeSkillsCount}
+            </span>
+            <span className="taste-skills-stat-lbl">{currentTabMeta.skillsLabel}</span>
           </div>
           <div className="taste-skills-stat-divider" aria-hidden="true" />
           <div className="taste-skills-stat-item">
-            <span className="taste-skills-stat-val">5</span>
-            <span className="taste-skills-stat-lbl">Specialized Domains</span>
+            <span className="taste-skills-stat-val">
+              {activeTab === "all" && !isSearching
+                ? totalDomainsCount
+                : activeDomainsCount}
+            </span>
+            <span className="taste-skills-stat-lbl">{currentTabMeta.domainsLabel}</span>
           </div>
           <div className="taste-skills-stat-divider" aria-hidden="true" />
           <div className="taste-skills-stat-item">
-            <span className="taste-skills-stat-val">9+</span>
+            <span className="taste-skills-stat-val">{yearsOfExperience}+</span>
             <span className="taste-skills-stat-lbl">Years Hands-on Delivery</span>
           </div>
         </div>
@@ -431,7 +522,11 @@ export const Services = ({ data }: ServicesProps): JSX.Element => {
         {!isSearching && activeTab !== "all" && (
           <CategoryCard
             category={activeTab}
-            items={displayedItems.filter((s) => s.category === activeTab)}
+            items={
+              activeTab === "frontend"
+                ? frontendItems
+                : displayedItems.filter((s) => s.category === activeTab)
+            }
           />
         )}
 

@@ -215,10 +215,28 @@
             "category": "frontend"
         },
         {
-            "name": "React Native",
+            "name": "React Query",
             "text": "95%",
             "percent": "95",
-            "category": "mobile"
+            "category": "frontend"
+        },
+        {
+            "name": "RTK Query",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "Material UI",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "Ant Design",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
         },
         {
             "name": "Vue",
@@ -227,7 +245,43 @@
             "category": "frontend"
         },
         {
+            "name": "Nuxt",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "Vuetify",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
             "name": "Angular",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "Angular Material",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "Angular Router / DI",
+            "text": "95%",
+            "percent": "95",
+            "category": "frontend"
+        },
+        {
+            "name": "Angular Signals",
+            "text": "90%",
+            "percent": "90",
+            "category": "frontend"
+        },
+        {
+            "name": "Reactive Forms",
             "text": "95%",
             "percent": "95",
             "category": "frontend"
@@ -245,37 +299,19 @@
             "category": "frontend"
         },
         {
-            "name": "Angular Signals",
-            "text": "90%",
-            "percent": "90",
-            "category": "frontend"
-        },
-        {
-            "name": "Reactive Forms",
+            "name": "Tailwind css",
             "text": "95%",
             "percent": "95",
             "category": "frontend"
         },
         {
-            "name": "Angular Router / DI",
+            "name": "Flexbox",
             "text": "95%",
             "percent": "95",
             "category": "frontend"
         },
         {
-            "name": "Nuxt",
-            "text": "95%",
-            "percent": "95",
-            "category": "frontend"
-        },
-        {
-            "name": "Pwa",
-            "text": "95%",
-            "percent": "95",
-            "category": "frontend"
-        },
-        {
-            "name": "FlexBox / CssGrid",
+            "name": "CSS Grid",
             "text": "95%",
             "percent": "95",
             "category": "frontend"
@@ -287,46 +323,22 @@
             "category": "frontend"
         },
         {
-            "name": "Tailwind css",
-            "text": "95%",
-            "percent": "95",
-            "category": "frontend"
-        },
-        {
-            "name": "Material ui / Ant",
-            "text": "95%",
-            "percent": "95",
-            "category": "frontend"
-        },
-        {
-            "name": "React Query",
-            "text": "95%",
-            "percent": "95",
-            "category": "frontend"
-        },
-        {
-            "name": "RTK Query",
-            "text": "95%",
-            "percent": "95",
-            "category": "frontend"
-        },
-        {
             "name": "MicroFrontend",
             "text": "95%",
             "percent": "95",
             "category": "frontend"
         },
         {
-            "name": "Angular Material",
+            "name": "Pwa",
             "text": "95%",
             "percent": "95",
             "category": "frontend"
         },
         {
-            "name": "Vuetify",
+            "name": "Flutter",
             "text": "90%",
             "percent": "90",
-            "category": "frontend"
+            "category": "mobile"
         },
         {
             "name": "Dart",
@@ -335,9 +347,9 @@
             "category": "mobile"
         },
         {
-            "name": "Flutter",
-            "text": "90%",
-            "percent": "90",
+            "name": "React Native",
+            "text": "95%",
+            "percent": "95",
             "category": "mobile"
         },
         {
@@ -368,6 +380,18 @@
             "name": "Flask",
             "text": "90%",
             "percent": "90",
+            "category": "backend"
+        },
+        {
+            "name": "Microservices",
+            "text": "90%",
+            "percent": "90",
+            "category": "backend"
+        },
+        {
+            "name": "RabbitMQ",
+            "text": "85%",
+            "percent": "85",
             "category": "backend"
         },
         {
